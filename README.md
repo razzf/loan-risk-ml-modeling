@@ -135,11 +135,11 @@ The two machine learning model pipelines were encapsulated within an API using F
 To set up this project locally:
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/TuringCollegeSubmissions/jwerne-DS.v2.5.3.4.1.git
+   git clone https://github.com/razzf/loan-risk-ml-modeling.git
    ```
 2. **Navigate to the project directory**:
    ```bash
-   cd jwerne-DS.v2.5.3.4.1
+   cd loan-risk-ml-modeling
    ```
 3. **Install required packages**:
    Ensure Python is installed and use the following command:
