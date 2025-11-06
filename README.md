@@ -1,4 +1,4 @@
-# Machine Learning Capstone Project: Home Credit Default Risk Prediction (DS.v2.5.3.4.1)
+# Machine Learning Capstone Project: Home Credit Default Risk Prediction
 
 ## Table of Contents
 
@@ -178,11 +178,10 @@ project-root/
 ├── src/
 │   ├── features.py                  # Feature engineering functions
 │   └── utils.py                     # Helper functions (e.g., plotting, metrics, statistical testing)
-├── data/
-│   ├── raw/                         # Unprocessed Home Credit dataset
-│   └── processed/                   # Cleaned/merged datasets
-└── docs/
-    └── POC_Presentation.ppt         # Summary slides for demo meetings
+└── data/
+    ├── raw/                         # Unprocessed Home Credit dataset
+    └── processed/                   # Cleaned/merged datasets
+
 ```
 
 
