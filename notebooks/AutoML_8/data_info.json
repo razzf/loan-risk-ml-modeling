@@ -1,0 +1,2191 @@
+{
+    "columns": [
+        "SK_ID_CURR",
+        "NAME_CONTRACT_TYPE",
+        "CODE_GENDER",
+        "FLAG_OWN_CAR",
+        "FLAG_OWN_REALTY",
+        "CNT_CHILDREN",
+        "AMT_INCOME_TOTAL",
+        "AMT_CREDIT",
+        "AMT_ANNUITY",
+        "AMT_GOODS_PRICE",
+        "NAME_TYPE_SUITE",
+        "NAME_INCOME_TYPE",
+        "NAME_EDUCATION_TYPE",
+        "NAME_FAMILY_STATUS",
+        "NAME_HOUSING_TYPE",
+        "REGION_POPULATION_RELATIVE",
+        "DAYS_BIRTH",
+        "DAYS_EMPLOYED",
+        "DAYS_REGISTRATION",
+        "DAYS_ID_PUBLISH",
+        "OWN_CAR_AGE",
+        "FLAG_MOBIL",
+        "FLAG_EMP_PHONE",
+        "FLAG_WORK_PHONE",
+        "FLAG_CONT_MOBILE",
+        "FLAG_PHONE",
+        "FLAG_EMAIL",
+        "OCCUPATION_TYPE",
+        "CNT_FAM_MEMBERS",
+        "REGION_RATING_CLIENT",
+        "REGION_RATING_CLIENT_W_CITY",
+        "WEEKDAY_APPR_PROCESS_START",
+        "HOUR_APPR_PROCESS_START",
+        "REG_REGION_NOT_LIVE_REGION",
+        "REG_REGION_NOT_WORK_REGION",
+        "LIVE_REGION_NOT_WORK_REGION",
+        "REG_CITY_NOT_LIVE_CITY",
+        "REG_CITY_NOT_WORK_CITY",
+        "LIVE_CITY_NOT_WORK_CITY",
+        "ORGANIZATION_TYPE",
+        "EXT_SOURCE_1",
+        "EXT_SOURCE_2",
+        "EXT_SOURCE_3",
+        "APARTMENTS_AVG",
+        "BASEMENTAREA_AVG",
+        "YEARS_BEGINEXPLUATATION_AVG",
+        "YEARS_BUILD_AVG",
+        "COMMONAREA_AVG",
+        "ELEVATORS_AVG",
+        "ENTRANCES_AVG",
+        "FLOORSMAX_AVG",
+        "FLOORSMIN_AVG",
+        "LANDAREA_AVG",
+        "LIVINGAPARTMENTS_AVG",
+        "LIVINGAREA_AVG",
+        "NONLIVINGAPARTMENTS_AVG",
+        "NONLIVINGAREA_AVG",
+        "APARTMENTS_MODE",
+        "BASEMENTAREA_MODE",
+        "YEARS_BEGINEXPLUATATION_MODE",
+        "YEARS_BUILD_MODE",
+        "COMMONAREA_MODE",
+        "ELEVATORS_MODE",
+        "ENTRANCES_MODE",
+        "FLOORSMAX_MODE",
+        "FLOORSMIN_MODE",
+        "LANDAREA_MODE",
+        "LIVINGAPARTMENTS_MODE",
+        "LIVINGAREA_MODE",
+        "NONLIVINGAPARTMENTS_MODE",
+        "NONLIVINGAREA_MODE",
+        "APARTMENTS_MEDI",
+        "BASEMENTAREA_MEDI",
+        "YEARS_BEGINEXPLUATATION_MEDI",
+        "YEARS_BUILD_MEDI",
+        "COMMONAREA_MEDI",
+        "ELEVATORS_MEDI",
+        "ENTRANCES_MEDI",
+        "FLOORSMAX_MEDI",
+        "FLOORSMIN_MEDI",
+        "LANDAREA_MEDI",
+        "LIVINGAPARTMENTS_MEDI",
+        "LIVINGAREA_MEDI",
+        "NONLIVINGAPARTMENTS_MEDI",
+        "NONLIVINGAREA_MEDI",
+        "FONDKAPREMONT_MODE",
+        "HOUSETYPE_MODE",
+        "TOTALAREA_MODE",
+        "WALLSMATERIAL_MODE",
+        "EMERGENCYSTATE_MODE",
+        "OBS_30_CNT_SOCIAL_CIRCLE",
+        "DEF_30_CNT_SOCIAL_CIRCLE",
+        "OBS_60_CNT_SOCIAL_CIRCLE",
+        "DEF_60_CNT_SOCIAL_CIRCLE",
+        "DAYS_LAST_PHONE_CHANGE",
+        "FLAG_DOCUMENT_2",
+        "FLAG_DOCUMENT_3",
+        "FLAG_DOCUMENT_4",
+        "FLAG_DOCUMENT_5",
+        "FLAG_DOCUMENT_6",
+        "FLAG_DOCUMENT_7",
+        "FLAG_DOCUMENT_8",
+        "FLAG_DOCUMENT_9",
+        "FLAG_DOCUMENT_10",
+        "FLAG_DOCUMENT_11",
+        "FLAG_DOCUMENT_12",
+        "FLAG_DOCUMENT_13",
+        "FLAG_DOCUMENT_14",
+        "FLAG_DOCUMENT_15",
+        "FLAG_DOCUMENT_16",
+        "FLAG_DOCUMENT_17",
+        "FLAG_DOCUMENT_18",
+        "FLAG_DOCUMENT_19",
+        "FLAG_DOCUMENT_20",
+        "FLAG_DOCUMENT_21",
+        "AMT_REQ_CREDIT_BUREAU_HOUR",
+        "AMT_REQ_CREDIT_BUREAU_DAY",
+        "AMT_REQ_CREDIT_BUREAU_WEEK",
+        "AMT_REQ_CREDIT_BUREAU_MON",
+        "AMT_REQ_CREDIT_BUREAU_QRT",
+        "AMT_REQ_CREDIT_BUREAU_YEAR",
+        "SOURCE",
+        "ALL_DAYS_CREDIT_min",
+        "ALL_DAYS_CREDIT_max",
+        "ALL_DAYS_CREDIT_mean",
+        "ALL_CREDIT_DAY_OVERDUE_max",
+        "ALL_CREDIT_DAY_OVERDUE_mean",
+        "ALL_CREDIT_DAY_OVERDUE_sum",
+        "ALL_DAYS_CREDIT_ENDDATE_min",
+        "ALL_DAYS_CREDIT_ENDDATE_max",
+        "ALL_DAYS_CREDIT_ENDDATE_mean",
+        "ALL_DAYS_ENDDATE_FACT_min",
+        "ALL_DAYS_ENDDATE_FACT_max",
+        "ALL_DAYS_ENDDATE_FACT_mean",
+        "ALL_AMT_CREDIT_MAX_OVERDUE_max",
+        "ALL_AMT_CREDIT_MAX_OVERDUE_mean",
+        "ALL_AMT_CREDIT_MAX_OVERDUE_sum",
+        "ALL_CNT_CREDIT_PROLONG_sum",
+        "ALL_CNT_CREDIT_PROLONG_mean",
+        "ALL_AMT_CREDIT_SUM_sum",
+        "ALL_AMT_CREDIT_SUM_mean",
+        "ALL_AMT_CREDIT_SUM_max",
+        "ALL_AMT_CREDIT_SUM_DEBT_sum",
+        "ALL_AMT_CREDIT_SUM_DEBT_mean",
+        "ALL_AMT_CREDIT_SUM_LIMIT_sum",
+        "ALL_AMT_CREDIT_SUM_LIMIT_mean",
+        "ALL_AMT_CREDIT_SUM_OVERDUE_sum",
+        "ALL_AMT_CREDIT_SUM_OVERDUE_mean",
+        "ALL_AMT_CREDIT_SUM_OVERDUE_max",
+        "ALL_DAYS_CREDIT_UPDATE_min",
+        "ALL_DAYS_CREDIT_UPDATE_max",
+        "ALL_DAYS_CREDIT_UPDATE_mean",
+        "ALL_AMT_ANNUITY_mean",
+        "ALL_AMT_ANNUITY_sum",
+        "ALL_AMT_ANNUITY_max",
+        "ALL_BB_MONTHS_BALANCE_min_min",
+        "ALL_BB_MONTHS_BALANCE_max_max",
+        "ALL_BB_MONTHS_BALANCE_mean_mean",
+        "ALL_BB_STATUS_0_sum_sum",
+        "ALL_BB_STATUS_1_sum_sum",
+        "ALL_BB_STATUS_2_sum_sum",
+        "ALL_BB_STATUS_3_sum_sum",
+        "ALL_BB_STATUS_4_sum_sum",
+        "ALL_BB_STATUS_5_sum_sum",
+        "ALL_BB_STATUS_C_sum_sum",
+        "ALL_BB_STATUS_X_sum_sum",
+        "ACTIVE_DAYS_CREDIT_min",
+        "ACTIVE_DAYS_CREDIT_max",
+        "ACTIVE_DAYS_CREDIT_mean",
+        "ACTIVE_CREDIT_DAY_OVERDUE_max",
+        "ACTIVE_CREDIT_DAY_OVERDUE_mean",
+        "ACTIVE_CREDIT_DAY_OVERDUE_sum",
+        "ACTIVE_DAYS_CREDIT_ENDDATE_min",
+        "ACTIVE_DAYS_CREDIT_ENDDATE_max",
+        "ACTIVE_DAYS_CREDIT_ENDDATE_mean",
+        "ACTIVE_DAYS_ENDDATE_FACT_min",
+        "ACTIVE_DAYS_ENDDATE_FACT_max",
+        "ACTIVE_DAYS_ENDDATE_FACT_mean",
+        "ACTIVE_AMT_CREDIT_MAX_OVERDUE_max",
+        "ACTIVE_AMT_CREDIT_MAX_OVERDUE_mean",
+        "ACTIVE_AMT_CREDIT_MAX_OVERDUE_sum",
+        "ACTIVE_CNT_CREDIT_PROLONG_sum",
+        "ACTIVE_CNT_CREDIT_PROLONG_mean",
+        "ACTIVE_AMT_CREDIT_SUM_sum",
+        "ACTIVE_AMT_CREDIT_SUM_mean",
+        "ACTIVE_AMT_CREDIT_SUM_max",
+        "ACTIVE_AMT_CREDIT_SUM_DEBT_sum",
+        "ACTIVE_AMT_CREDIT_SUM_DEBT_mean",
+        "ACTIVE_AMT_CREDIT_SUM_LIMIT_sum",
+        "ACTIVE_AMT_CREDIT_SUM_LIMIT_mean",
+        "ACTIVE_AMT_CREDIT_SUM_OVERDUE_sum",
+        "ACTIVE_AMT_CREDIT_SUM_OVERDUE_mean",
+        "ACTIVE_AMT_CREDIT_SUM_OVERDUE_max",
+        "ACTIVE_DAYS_CREDIT_UPDATE_min",
+        "ACTIVE_DAYS_CREDIT_UPDATE_max",
+        "ACTIVE_DAYS_CREDIT_UPDATE_mean",
+        "ACTIVE_AMT_ANNUITY_mean",
+        "ACTIVE_AMT_ANNUITY_sum",
+        "ACTIVE_AMT_ANNUITY_max",
+        "ACTIVE_BB_MONTHS_BALANCE_min_min",
+        "ACTIVE_BB_MONTHS_BALANCE_max_max",
+        "ACTIVE_BB_MONTHS_BALANCE_mean_mean",
+        "ACTIVE_BB_STATUS_0_sum_sum",
+        "ACTIVE_BB_STATUS_1_sum_sum",
+        "ACTIVE_BB_STATUS_2_sum_sum",
+        "ACTIVE_BB_STATUS_3_sum_sum",
+        "ACTIVE_BB_STATUS_4_sum_sum",
+        "ACTIVE_BB_STATUS_5_sum_sum",
+        "ACTIVE_BB_STATUS_C_sum_sum",
+        "ACTIVE_BB_STATUS_X_sum_sum",
+        "CLOSED_DAYS_CREDIT_min",
+        "CLOSED_DAYS_CREDIT_max",
+        "CLOSED_DAYS_CREDIT_mean",
+        "CLOSED_CREDIT_DAY_OVERDUE_max",
+        "CLOSED_CREDIT_DAY_OVERDUE_mean",
+        "CLOSED_CREDIT_DAY_OVERDUE_sum",
+        "CLOSED_DAYS_CREDIT_ENDDATE_min",
+        "CLOSED_DAYS_CREDIT_ENDDATE_max",
+        "CLOSED_DAYS_CREDIT_ENDDATE_mean",
+        "CLOSED_DAYS_ENDDATE_FACT_min",
+        "CLOSED_DAYS_ENDDATE_FACT_max",
+        "CLOSED_DAYS_ENDDATE_FACT_mean",
+        "CLOSED_AMT_CREDIT_MAX_OVERDUE_max",
+        "CLOSED_AMT_CREDIT_MAX_OVERDUE_mean",
+        "CLOSED_AMT_CREDIT_MAX_OVERDUE_sum",
+        "CLOSED_CNT_CREDIT_PROLONG_sum",
+        "CLOSED_CNT_CREDIT_PROLONG_mean",
+        "CLOSED_AMT_CREDIT_SUM_sum",
+        "CLOSED_AMT_CREDIT_SUM_mean",
+        "CLOSED_AMT_CREDIT_SUM_max",
+        "CLOSED_AMT_CREDIT_SUM_DEBT_sum",
+        "CLOSED_AMT_CREDIT_SUM_DEBT_mean",
+        "CLOSED_AMT_CREDIT_SUM_LIMIT_sum",
+        "CLOSED_AMT_CREDIT_SUM_LIMIT_mean",
+        "CLOSED_AMT_CREDIT_SUM_OVERDUE_sum",
+        "CLOSED_AMT_CREDIT_SUM_OVERDUE_mean",
+        "CLOSED_AMT_CREDIT_SUM_OVERDUE_max",
+        "CLOSED_DAYS_CREDIT_UPDATE_min",
+        "CLOSED_DAYS_CREDIT_UPDATE_max",
+        "CLOSED_DAYS_CREDIT_UPDATE_mean",
+        "CLOSED_AMT_ANNUITY_mean",
+        "CLOSED_AMT_ANNUITY_sum",
+        "CLOSED_AMT_ANNUITY_max",
+        "CLOSED_BB_MONTHS_BALANCE_min_min",
+        "CLOSED_BB_MONTHS_BALANCE_max_max",
+        "CLOSED_BB_MONTHS_BALANCE_mean_mean",
+        "CLOSED_BB_STATUS_0_sum_sum",
+        "CLOSED_BB_STATUS_1_sum_sum",
+        "CLOSED_BB_STATUS_2_sum_sum",
+        "CLOSED_BB_STATUS_3_sum_sum",
+        "CLOSED_BB_STATUS_4_sum_sum",
+        "CLOSED_BB_STATUS_5_sum_sum",
+        "CLOSED_BB_STATUS_C_sum_sum",
+        "CLOSED_BB_STATUS_X_sum_sum",
+        "SOLD_DAYS_CREDIT_min",
+        "SOLD_DAYS_CREDIT_max",
+        "SOLD_DAYS_CREDIT_mean",
+        "SOLD_CREDIT_DAY_OVERDUE_max",
+        "SOLD_CREDIT_DAY_OVERDUE_mean",
+        "SOLD_CREDIT_DAY_OVERDUE_sum",
+        "SOLD_DAYS_CREDIT_ENDDATE_min",
+        "SOLD_DAYS_CREDIT_ENDDATE_max",
+        "SOLD_DAYS_CREDIT_ENDDATE_mean",
+        "SOLD_DAYS_ENDDATE_FACT_min",
+        "SOLD_DAYS_ENDDATE_FACT_max",
+        "SOLD_DAYS_ENDDATE_FACT_mean",
+        "SOLD_AMT_CREDIT_MAX_OVERDUE_max",
+        "SOLD_AMT_CREDIT_MAX_OVERDUE_mean",
+        "SOLD_AMT_CREDIT_MAX_OVERDUE_sum",
+        "SOLD_CNT_CREDIT_PROLONG_sum",
+        "SOLD_CNT_CREDIT_PROLONG_mean",
+        "SOLD_AMT_CREDIT_SUM_sum",
+        "SOLD_AMT_CREDIT_SUM_mean",
+        "SOLD_AMT_CREDIT_SUM_max",
+        "SOLD_AMT_CREDIT_SUM_DEBT_sum",
+        "SOLD_AMT_CREDIT_SUM_DEBT_mean",
+        "SOLD_AMT_CREDIT_SUM_LIMIT_sum",
+        "SOLD_AMT_CREDIT_SUM_LIMIT_mean",
+        "SOLD_AMT_CREDIT_SUM_OVERDUE_sum",
+        "SOLD_AMT_CREDIT_SUM_OVERDUE_mean",
+        "SOLD_AMT_CREDIT_SUM_OVERDUE_max",
+        "SOLD_DAYS_CREDIT_UPDATE_min",
+        "SOLD_DAYS_CREDIT_UPDATE_max",
+        "SOLD_DAYS_CREDIT_UPDATE_mean",
+        "SOLD_AMT_ANNUITY_mean",
+        "SOLD_AMT_ANNUITY_sum",
+        "SOLD_AMT_ANNUITY_max",
+        "SOLD_BB_MONTHS_BALANCE_min_min",
+        "SOLD_BB_MONTHS_BALANCE_max_max",
+        "SOLD_BB_MONTHS_BALANCE_mean_mean",
+        "SOLD_BB_STATUS_0_sum_sum",
+        "SOLD_BB_STATUS_1_sum_sum",
+        "SOLD_BB_STATUS_2_sum_sum",
+        "SOLD_BB_STATUS_3_sum_sum",
+        "SOLD_BB_STATUS_4_sum_sum",
+        "SOLD_BB_STATUS_5_sum_sum",
+        "SOLD_BB_STATUS_C_sum_sum",
+        "SOLD_BB_STATUS_X_sum_sum",
+        "ALL_CREDIT_TYPE_Another type of loan",
+        "ALL_CREDIT_TYPE_Car loan",
+        "ALL_CREDIT_TYPE_Cash loan (non-earmarked)",
+        "ALL_CREDIT_TYPE_Consumer credit",
+        "ALL_CREDIT_TYPE_Credit card",
+        "ALL_CREDIT_TYPE_Interbank credit",
+        "ALL_CREDIT_TYPE_Loan for business development",
+        "ALL_CREDIT_TYPE_Loan for purchase of shares (margin lending)",
+        "ALL_CREDIT_TYPE_Loan for the purchase of equipment",
+        "ALL_CREDIT_TYPE_Loan for working capital replenishment",
+        "ALL_CREDIT_TYPE_Microloan",
+        "ALL_CREDIT_TYPE_Mobile operator loan",
+        "ALL_CREDIT_TYPE_Mortgage",
+        "ALL_CREDIT_TYPE_Real estate loan",
+        "ALL_CREDIT_TYPE_Unknown type of loan",
+        "ACTIVE_CREDIT_TYPE_Another type of loan",
+        "ACTIVE_CREDIT_TYPE_Car loan",
+        "ACTIVE_CREDIT_TYPE_Cash loan (non-earmarked)",
+        "ACTIVE_CREDIT_TYPE_Consumer credit",
+        "ACTIVE_CREDIT_TYPE_Credit card",
+        "ACTIVE_CREDIT_TYPE_Loan for business development",
+        "ACTIVE_CREDIT_TYPE_Loan for purchase of shares (margin lending)",
+        "ACTIVE_CREDIT_TYPE_Loan for the purchase of equipment",
+        "ACTIVE_CREDIT_TYPE_Loan for working capital replenishment",
+        "ACTIVE_CREDIT_TYPE_Microloan",
+        "ACTIVE_CREDIT_TYPE_Mobile operator loan",
+        "ACTIVE_CREDIT_TYPE_Mortgage",
+        "ACTIVE_CREDIT_TYPE_Real estate loan",
+        "ACTIVE_CREDIT_TYPE_Unknown type of loan",
+        "CLOSED_CREDIT_TYPE_Another type of loan",
+        "CLOSED_CREDIT_TYPE_Car loan",
+        "CLOSED_CREDIT_TYPE_Cash loan (non-earmarked)",
+        "CLOSED_CREDIT_TYPE_Consumer credit",
+        "CLOSED_CREDIT_TYPE_Credit card",
+        "CLOSED_CREDIT_TYPE_Interbank credit",
+        "CLOSED_CREDIT_TYPE_Loan for business development",
+        "CLOSED_CREDIT_TYPE_Loan for purchase of shares (margin lending)",
+        "CLOSED_CREDIT_TYPE_Loan for the purchase of equipment",
+        "CLOSED_CREDIT_TYPE_Loan for working capital replenishment",
+        "CLOSED_CREDIT_TYPE_Microloan",
+        "CLOSED_CREDIT_TYPE_Mortgage",
+        "CLOSED_CREDIT_TYPE_Real estate loan",
+        "CLOSED_CREDIT_TYPE_Unknown type of loan",
+        "SOLD_CREDIT_TYPE_Another type of loan",
+        "SOLD_CREDIT_TYPE_Car loan",
+        "SOLD_CREDIT_TYPE_Cash loan (non-earmarked)",
+        "SOLD_CREDIT_TYPE_Consumer credit",
+        "SOLD_CREDIT_TYPE_Credit card",
+        "SOLD_CREDIT_TYPE_Loan for business development",
+        "SOLD_CREDIT_TYPE_Loan for working capital replenishment",
+        "SOLD_CREDIT_TYPE_Microloan",
+        "SOLD_CREDIT_TYPE_Mortgage",
+        "SOLD_CREDIT_TYPE_Real estate loan",
+        "CREDIT_ACTIVE_COUNT_ACTIVE",
+        "CREDIT_ACTIVE_COUNT_BAD DEBT",
+        "CREDIT_ACTIVE_COUNT_CLOSED",
+        "CREDIT_ACTIVE_COUNT_SOLD",
+        "DEBT_RATIO",
+        "OVERDUE_RATIO",
+        "BUREAU_LOAN_COUNT",
+        "PREV_AMT_ANNUITY_MEAN",
+        "PREV_AMT_ANNUITY_MAX",
+        "PREV_AMT_ANNUITY_SUM",
+        "PREV_AMT_APPLICATION_MEAN",
+        "PREV_AMT_APPLICATION_MAX",
+        "PREV_AMT_APPLICATION_SUM",
+        "PREV_AMT_CREDIT_MEAN",
+        "PREV_AMT_CREDIT_MAX",
+        "PREV_AMT_CREDIT_SUM",
+        "PREV_AMT_DOWN_PAYMENT_MEAN",
+        "PREV_AMT_DOWN_PAYMENT_MAX",
+        "PREV_AMT_DOWN_PAYMENT_SUM",
+        "PREV_AMT_GOODS_PRICE_MEAN",
+        "PREV_AMT_GOODS_PRICE_MAX",
+        "PREV_AMT_GOODS_PRICE_SUM",
+        "PREV_HOUR_APPR_PROCESS_START_MEAN",
+        "PREV_HOUR_APPR_PROCESS_START_MAX",
+        "PREV_HOUR_APPR_PROCESS_START_MIN",
+        "PREV_RATE_DOWN_PAYMENT_MEAN",
+        "PREV_RATE_DOWN_PAYMENT_MAX",
+        "PREV_RATE_DOWN_PAYMENT_MIN",
+        "PREV_DAYS_DECISION_MIN",
+        "PREV_DAYS_DECISION_MAX",
+        "PREV_DAYS_DECISION_MEAN",
+        "PREV_CCB_MONTHS_BALANCE_MIN_MIN",
+        "PREV_CCB_MONTHS_BALANCE_MAX_MAX",
+        "PREV_CCB_MONTHS_BALANCE_MEAN_MEAN",
+        "PREV_CCB_AMT_BALANCE_MEAN_MEAN",
+        "PREV_CCB_AMT_BALANCE_MAX_MAX",
+        "PREV_CCB_AMT_BALANCE_SUM_SUM",
+        "PREV_CCB_AMT_CREDIT_LIMIT_ACTUAL_MEAN_MEAN",
+        "PREV_CCB_AMT_CREDIT_LIMIT_ACTUAL_MAX_MAX",
+        "PREV_CCB_AMT_DRAWINGS_ATM_CURRENT_SUM_SUM",
+        "PREV_CCB_AMT_DRAWINGS_ATM_CURRENT_MEAN_MEAN",
+        "PREV_CCB_AMT_DRAWINGS_CURRENT_SUM_SUM",
+        "PREV_CCB_AMT_DRAWINGS_CURRENT_MEAN_MEAN",
+        "PREV_CCB_AMT_DRAWINGS_POS_CURRENT_SUM_SUM",
+        "PREV_CCB_AMT_DRAWINGS_POS_CURRENT_MEAN_MEAN",
+        "PREV_CCB_AMT_PAYMENT_CURRENT_SUM_SUM",
+        "PREV_CCB_AMT_PAYMENT_CURRENT_MEAN_MEAN",
+        "PREV_CCB_AMT_PAYMENT_TOTAL_CURRENT_SUM_SUM",
+        "PREV_CCB_AMT_PAYMENT_TOTAL_CURRENT_MEAN_MEAN",
+        "PREV_CCB_AMT_RECEIVABLE_PRINCIPAL_MEAN_MEAN",
+        "PREV_CCB_AMT_RECEIVABLE_PRINCIPAL_MAX_MAX",
+        "PREV_CCB_AMT_RECIVABLE_MEAN_MEAN",
+        "PREV_CCB_AMT_RECIVABLE_MAX_MAX",
+        "PREV_CCB_AMT_TOTAL_RECEIVABLE_MEAN_MEAN",
+        "PREV_CCB_AMT_TOTAL_RECEIVABLE_MAX_MAX",
+        "PREV_CCB_CNT_DRAWINGS_CURRENT_SUM_SUM",
+        "PREV_CCB_CNT_DRAWINGS_CURRENT_MEAN_MEAN",
+        "PREV_CCB_CNT_DRAWINGS_ATM_CURRENT_SUM_SUM",
+        "PREV_CCB_CNT_DRAWINGS_ATM_CURRENT_MEAN_MEAN",
+        "PREV_CCB_CNT_DRAWINGS_POS_CURRENT_SUM_SUM",
+        "PREV_CCB_CNT_DRAWINGS_POS_CURRENT_MEAN_MEAN",
+        "PREV_CCB_SK_DPD_MEAN_MEAN",
+        "PREV_CCB_SK_DPD_MAX_MAX",
+        "PREV_CCB_SK_DPD_SUM_SUM",
+        "PREV_CCB_SK_DPD_DEF_MEAN_MEAN",
+        "PREV_CCB_SK_DPD_DEF_MAX_MAX",
+        "PREV_CCB_SK_DPD_DEF_SUM_SUM",
+        "PREV_INST_NUM_INSTALMENT_VERSION_NUNIQUE_NUNIQUE",
+        "PREV_INST_NUM_INSTALMENT_NUMBER_MAX_MAX",
+        "PREV_INST_NUM_INSTALMENT_NUMBER_COUNT_COUNT",
+        "PREV_INST_AMT_INSTALMENT_SUM_SUM",
+        "PREV_INST_AMT_INSTALMENT_MEAN_MEAN",
+        "PREV_INST_AMT_INSTALMENT_MAX_MAX",
+        "PREV_INST_AMT_PAYMENT_SUM_SUM",
+        "PREV_INST_AMT_PAYMENT_MEAN_MEAN",
+        "PREV_INST_AMT_PAYMENT_MAX_MAX",
+        "PREV_INST_DAYS_INSTALMENT_MIN_MIN",
+        "PREV_INST_DAYS_INSTALMENT_MAX_MAX",
+        "PREV_INST_DAYS_INSTALMENT_MEAN_MEAN",
+        "PREV_INST_DAYS_ENTRY_PAYMENT_MIN_MIN",
+        "PREV_INST_DAYS_ENTRY_PAYMENT_MAX_MAX",
+        "PREV_INST_DAYS_ENTRY_PAYMENT_MEAN_MEAN",
+        "PREV_INST_PAYMENT_PERC_MEAN_MEAN",
+        "PREV_INST_PAYMENT_PERC_STD_STD",
+        "PREV_INST_PAYMENT_DIFF_MEAN_MEAN",
+        "PREV_INST_PAYMENT_DIFF_STD_STD",
+        "PREV_INST_PAYMENT_DIFF_MIN_MIN",
+        "PREV_INST_PAYMENT_DIFF_MAX_MAX",
+        "PREV_INST_DPD_MEAN_MEAN",
+        "PREV_INST_DPD_SUM_SUM",
+        "PREV_INST_DPD_MAX_MAX",
+        "PREV_INST_EARLY_PAYMENT_MEAN_MEAN",
+        "PREV_INST_EARLY_PAYMENT_SUM_SUM",
+        "PREV_INST_EARLY_REPAY_LOAN_MAX_MEAN",
+        "NAME_CONTRACT_STATUS_Approved",
+        "NAME_CONTRACT_STATUS_Canceled",
+        "NAME_CONTRACT_STATUS_Refused",
+        "NAME_CONTRACT_STATUS_Unused offer",
+        "NAME_PAYMENT_TYPE_Cash through the bank",
+        "NAME_PAYMENT_TYPE_Cashless from the account of the employer",
+        "NAME_PAYMENT_TYPE_Non-cash from your account",
+        "NAME_PAYMENT_TYPE_XNA",
+        "NAME_CLIENT_TYPE_New",
+        "NAME_CLIENT_TYPE_Refreshed",
+        "NAME_CLIENT_TYPE_Repeater",
+        "NAME_CLIENT_TYPE_XNA",
+        "NAME_CONTRACT_TYPE_Cash loans",
+        "NAME_CONTRACT_TYPE_Consumer loans",
+        "NAME_CONTRACT_TYPE_Revolving loans",
+        "NAME_CONTRACT_TYPE_XNA",
+        "WEEKDAY_APPR_PROCESS_START_FRIDAY",
+        "WEEKDAY_APPR_PROCESS_START_MONDAY",
+        "WEEKDAY_APPR_PROCESS_START_SATURDAY",
+        "WEEKDAY_APPR_PROCESS_START_SUNDAY",
+        "WEEKDAY_APPR_PROCESS_START_THURSDAY",
+        "WEEKDAY_APPR_PROCESS_START_TUESDAY",
+        "WEEKDAY_APPR_PROCESS_START_WEDNESDAY",
+        "POS_MONTHS_BALANCE_MIN",
+        "POS_MONTHS_BALANCE_MAX",
+        "POS_MONTHS_BALANCE_MEAN",
+        "POS_SK_DPD_MEAN",
+        "POS_SK_DPD_MAX",
+        "POS_SK_DPD_SUM",
+        "POS_SK_DPD_DEF_MEAN",
+        "POS_SK_DPD_DEF_MAX",
+        "POS_SK_DPD_DEF_SUM",
+        "POS_CNT_INSTALMENT_MEAN",
+        "POS_CNT_INSTALMENT_MAX",
+        "POS_CNT_INSTALMENT_FUTURE_MEAN",
+        "POS_CNT_INSTALMENT_FUTURE_MAX"
+    ],
+    "rows": 307511,
+    "cols": 481,
+    "target_is_numeric": true,
+    "columns_info": {
+        "SK_ID_CURR": [
+            "scale"
+        ],
+        "NAME_CONTRACT_TYPE": [
+            "categorical",
+            "few_categories"
+        ],
+        "CODE_GENDER": [
+            "categorical",
+            "few_categories"
+        ],
+        "FLAG_OWN_CAR": [
+            "categorical",
+            "few_categories"
+        ],
+        "FLAG_OWN_REALTY": [
+            "categorical",
+            "few_categories"
+        ],
+        "CNT_CHILDREN": [],
+        "AMT_INCOME_TOTAL": [
+            "scale"
+        ],
+        "AMT_CREDIT": [
+            "scale"
+        ],
+        "AMT_ANNUITY": [
+            "missing_values",
+            "scale"
+        ],
+        "AMT_GOODS_PRICE": [
+            "missing_values",
+            "scale"
+        ],
+        "NAME_TYPE_SUITE": [
+            "missing_values",
+            "categorical",
+            "few_categories"
+        ],
+        "NAME_INCOME_TYPE": [
+            "categorical",
+            "few_categories"
+        ],
+        "NAME_EDUCATION_TYPE": [
+            "categorical",
+            "few_categories"
+        ],
+        "NAME_FAMILY_STATUS": [
+            "categorical",
+            "few_categories"
+        ],
+        "NAME_HOUSING_TYPE": [
+            "categorical",
+            "few_categories"
+        ],
+        "REGION_POPULATION_RELATIVE": [],
+        "DAYS_BIRTH": [
+            "scale"
+        ],
+        "DAYS_EMPLOYED": [
+            "scale"
+        ],
+        "DAYS_REGISTRATION": [
+            "scale"
+        ],
+        "DAYS_ID_PUBLISH": [
+            "scale"
+        ],
+        "OWN_CAR_AGE": [
+            "missing_values",
+            "scale"
+        ],
+        "FLAG_MOBIL": [
+            "scale"
+        ],
+        "FLAG_EMP_PHONE": [
+            "scale"
+        ],
+        "FLAG_WORK_PHONE": [],
+        "FLAG_CONT_MOBILE": [
+            "scale"
+        ],
+        "FLAG_PHONE": [],
+        "FLAG_EMAIL": [],
+        "OCCUPATION_TYPE": [
+            "missing_values",
+            "categorical",
+            "few_categories"
+        ],
+        "CNT_FAM_MEMBERS": [
+            "missing_values",
+            "scale"
+        ],
+        "REGION_RATING_CLIENT": [
+            "scale"
+        ],
+        "REGION_RATING_CLIENT_W_CITY": [
+            "scale"
+        ],
+        "WEEKDAY_APPR_PROCESS_START": [
+            "categorical",
+            "few_categories"
+        ],
+        "HOUR_APPR_PROCESS_START": [
+            "scale"
+        ],
+        "REG_REGION_NOT_LIVE_REGION": [],
+        "REG_REGION_NOT_WORK_REGION": [],
+        "LIVE_REGION_NOT_WORK_REGION": [],
+        "REG_CITY_NOT_LIVE_CITY": [],
+        "REG_CITY_NOT_WORK_CITY": [],
+        "LIVE_CITY_NOT_WORK_CITY": [],
+        "ORGANIZATION_TYPE": [
+            "categorical",
+            "many_categories"
+        ],
+        "EXT_SOURCE_1": [
+            "missing_values",
+            "scale"
+        ],
+        "EXT_SOURCE_2": [
+            "missing_values",
+            "scale"
+        ],
+        "EXT_SOURCE_3": [
+            "missing_values",
+            "scale"
+        ],
+        "APARTMENTS_AVG": [
+            "missing_values"
+        ],
+        "BASEMENTAREA_AVG": [
+            "missing_values"
+        ],
+        "YEARS_BEGINEXPLUATATION_AVG": [
+            "missing_values",
+            "scale"
+        ],
+        "YEARS_BUILD_AVG": [
+            "missing_values",
+            "scale"
+        ],
+        "COMMONAREA_AVG": [
+            "missing_values"
+        ],
+        "ELEVATORS_AVG": [
+            "missing_values"
+        ],
+        "ENTRANCES_AVG": [
+            "missing_values"
+        ],
+        "FLOORSMAX_AVG": [
+            "missing_values"
+        ],
+        "FLOORSMIN_AVG": [
+            "missing_values"
+        ],
+        "LANDAREA_AVG": [
+            "missing_values"
+        ],
+        "LIVINGAPARTMENTS_AVG": [
+            "missing_values"
+        ],
+        "LIVINGAREA_AVG": [
+            "missing_values"
+        ],
+        "NONLIVINGAPARTMENTS_AVG": [
+            "missing_values"
+        ],
+        "NONLIVINGAREA_AVG": [
+            "missing_values"
+        ],
+        "APARTMENTS_MODE": [
+            "missing_values"
+        ],
+        "BASEMENTAREA_MODE": [
+            "missing_values"
+        ],
+        "YEARS_BEGINEXPLUATATION_MODE": [
+            "missing_values",
+            "scale"
+        ],
+        "YEARS_BUILD_MODE": [
+            "missing_values",
+            "scale"
+        ],
+        "COMMONAREA_MODE": [
+            "missing_values"
+        ],
+        "ELEVATORS_MODE": [
+            "missing_values"
+        ],
+        "ENTRANCES_MODE": [
+            "missing_values"
+        ],
+        "FLOORSMAX_MODE": [
+            "missing_values"
+        ],
+        "FLOORSMIN_MODE": [
+            "missing_values"
+        ],
+        "LANDAREA_MODE": [
+            "missing_values"
+        ],
+        "LIVINGAPARTMENTS_MODE": [
+            "missing_values"
+        ],
+        "LIVINGAREA_MODE": [
+            "missing_values"
+        ],
+        "NONLIVINGAPARTMENTS_MODE": [
+            "missing_values"
+        ],
+        "NONLIVINGAREA_MODE": [
+            "missing_values"
+        ],
+        "APARTMENTS_MEDI": [
+            "missing_values"
+        ],
+        "BASEMENTAREA_MEDI": [
+            "missing_values"
+        ],
+        "YEARS_BEGINEXPLUATATION_MEDI": [
+            "missing_values",
+            "scale"
+        ],
+        "YEARS_BUILD_MEDI": [
+            "missing_values",
+            "scale"
+        ],
+        "COMMONAREA_MEDI": [
+            "missing_values"
+        ],
+        "ELEVATORS_MEDI": [
+            "missing_values"
+        ],
+        "ENTRANCES_MEDI": [
+            "missing_values"
+        ],
+        "FLOORSMAX_MEDI": [
+            "missing_values"
+        ],
+        "FLOORSMIN_MEDI": [
+            "missing_values"
+        ],
+        "LANDAREA_MEDI": [
+            "missing_values"
+        ],
+        "LIVINGAPARTMENTS_MEDI": [
+            "missing_values"
+        ],
+        "LIVINGAREA_MEDI": [
+            "missing_values"
+        ],
+        "NONLIVINGAPARTMENTS_MEDI": [
+            "missing_values"
+        ],
+        "NONLIVINGAREA_MEDI": [
+            "missing_values"
+        ],
+        "FONDKAPREMONT_MODE": [
+            "missing_values",
+            "categorical",
+            "few_categories"
+        ],
+        "HOUSETYPE_MODE": [
+            "missing_values",
+            "categorical",
+            "few_categories"
+        ],
+        "TOTALAREA_MODE": [
+            "missing_values"
+        ],
+        "WALLSMATERIAL_MODE": [
+            "missing_values",
+            "categorical",
+            "few_categories"
+        ],
+        "EMERGENCYSTATE_MODE": [
+            "missing_values",
+            "categorical",
+            "few_categories"
+        ],
+        "OBS_30_CNT_SOCIAL_CIRCLE": [
+            "missing_values",
+            "scale"
+        ],
+        "DEF_30_CNT_SOCIAL_CIRCLE": [
+            "missing_values"
+        ],
+        "OBS_60_CNT_SOCIAL_CIRCLE": [
+            "missing_values",
+            "scale"
+        ],
+        "DEF_60_CNT_SOCIAL_CIRCLE": [
+            "missing_values"
+        ],
+        "DAYS_LAST_PHONE_CHANGE": [
+            "missing_values",
+            "scale"
+        ],
+        "FLAG_DOCUMENT_2": [],
+        "FLAG_DOCUMENT_3": [
+            "scale"
+        ],
+        "FLAG_DOCUMENT_4": [],
+        "FLAG_DOCUMENT_5": [],
+        "FLAG_DOCUMENT_6": [],
+        "FLAG_DOCUMENT_7": [],
+        "FLAG_DOCUMENT_8": [],
+        "FLAG_DOCUMENT_9": [],
+        "FLAG_DOCUMENT_10": [],
+        "FLAG_DOCUMENT_11": [],
+        "FLAG_DOCUMENT_12": [],
+        "FLAG_DOCUMENT_13": [],
+        "FLAG_DOCUMENT_14": [],
+        "FLAG_DOCUMENT_15": [],
+        "FLAG_DOCUMENT_16": [],
+        "FLAG_DOCUMENT_17": [],
+        "FLAG_DOCUMENT_18": [],
+        "FLAG_DOCUMENT_19": [],
+        "FLAG_DOCUMENT_20": [],
+        "FLAG_DOCUMENT_21": [],
+        "AMT_REQ_CREDIT_BUREAU_HOUR": [
+            "missing_values"
+        ],
+        "AMT_REQ_CREDIT_BUREAU_DAY": [
+            "missing_values"
+        ],
+        "AMT_REQ_CREDIT_BUREAU_WEEK": [
+            "missing_values"
+        ],
+        "AMT_REQ_CREDIT_BUREAU_MON": [
+            "missing_values"
+        ],
+        "AMT_REQ_CREDIT_BUREAU_QRT": [
+            "missing_values"
+        ],
+        "AMT_REQ_CREDIT_BUREAU_YEAR": [
+            "missing_values",
+            "scale"
+        ],
+        "SOURCE": [
+            "constant_column"
+        ],
+        "ALL_DAYS_CREDIT_min": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_DAYS_CREDIT_max": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_DAYS_CREDIT_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_CREDIT_DAY_OVERDUE_max": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_CREDIT_DAY_OVERDUE_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_CREDIT_DAY_OVERDUE_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_DAYS_CREDIT_ENDDATE_min": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_DAYS_CREDIT_ENDDATE_max": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_DAYS_CREDIT_ENDDATE_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_DAYS_ENDDATE_FACT_min": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_DAYS_ENDDATE_FACT_max": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_DAYS_ENDDATE_FACT_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_AMT_CREDIT_MAX_OVERDUE_max": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_AMT_CREDIT_MAX_OVERDUE_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_AMT_CREDIT_MAX_OVERDUE_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_CNT_CREDIT_PROLONG_sum": [
+            "missing_values"
+        ],
+        "ALL_CNT_CREDIT_PROLONG_mean": [
+            "missing_values"
+        ],
+        "ALL_AMT_CREDIT_SUM_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_AMT_CREDIT_SUM_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_AMT_CREDIT_SUM_max": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_AMT_CREDIT_SUM_DEBT_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_AMT_CREDIT_SUM_DEBT_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_AMT_CREDIT_SUM_LIMIT_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_AMT_CREDIT_SUM_LIMIT_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_AMT_CREDIT_SUM_OVERDUE_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_AMT_CREDIT_SUM_OVERDUE_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_AMT_CREDIT_SUM_OVERDUE_max": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_DAYS_CREDIT_UPDATE_min": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_DAYS_CREDIT_UPDATE_max": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_DAYS_CREDIT_UPDATE_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_AMT_ANNUITY_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_AMT_ANNUITY_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_AMT_ANNUITY_max": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_BB_MONTHS_BALANCE_min_min": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_BB_MONTHS_BALANCE_max_max": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_BB_MONTHS_BALANCE_mean_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_BB_STATUS_0_sum_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_BB_STATUS_1_sum_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_BB_STATUS_2_sum_sum": [
+            "missing_values"
+        ],
+        "ALL_BB_STATUS_3_sum_sum": [
+            "missing_values"
+        ],
+        "ALL_BB_STATUS_4_sum_sum": [
+            "missing_values"
+        ],
+        "ALL_BB_STATUS_5_sum_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_BB_STATUS_C_sum_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_BB_STATUS_X_sum_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_DAYS_CREDIT_min": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_DAYS_CREDIT_max": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_DAYS_CREDIT_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_CREDIT_DAY_OVERDUE_max": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_CREDIT_DAY_OVERDUE_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_CREDIT_DAY_OVERDUE_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_DAYS_CREDIT_ENDDATE_min": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_DAYS_CREDIT_ENDDATE_max": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_DAYS_CREDIT_ENDDATE_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_DAYS_ENDDATE_FACT_min": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_DAYS_ENDDATE_FACT_max": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_DAYS_ENDDATE_FACT_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_AMT_CREDIT_MAX_OVERDUE_max": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_AMT_CREDIT_MAX_OVERDUE_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_AMT_CREDIT_MAX_OVERDUE_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_CNT_CREDIT_PROLONG_sum": [
+            "missing_values"
+        ],
+        "ACTIVE_CNT_CREDIT_PROLONG_mean": [
+            "missing_values"
+        ],
+        "ACTIVE_AMT_CREDIT_SUM_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_AMT_CREDIT_SUM_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_AMT_CREDIT_SUM_max": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_AMT_CREDIT_SUM_DEBT_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_AMT_CREDIT_SUM_DEBT_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_AMT_CREDIT_SUM_LIMIT_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_AMT_CREDIT_SUM_LIMIT_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_AMT_CREDIT_SUM_OVERDUE_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_AMT_CREDIT_SUM_OVERDUE_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_AMT_CREDIT_SUM_OVERDUE_max": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_DAYS_CREDIT_UPDATE_min": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_DAYS_CREDIT_UPDATE_max": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_DAYS_CREDIT_UPDATE_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_AMT_ANNUITY_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_AMT_ANNUITY_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_AMT_ANNUITY_max": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_BB_MONTHS_BALANCE_min_min": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_BB_MONTHS_BALANCE_max_max": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_BB_MONTHS_BALANCE_mean_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_BB_STATUS_0_sum_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_BB_STATUS_1_sum_sum": [
+            "missing_values"
+        ],
+        "ACTIVE_BB_STATUS_2_sum_sum": [
+            "missing_values"
+        ],
+        "ACTIVE_BB_STATUS_3_sum_sum": [
+            "missing_values"
+        ],
+        "ACTIVE_BB_STATUS_4_sum_sum": [
+            "missing_values"
+        ],
+        "ACTIVE_BB_STATUS_5_sum_sum": [
+            "missing_values"
+        ],
+        "ACTIVE_BB_STATUS_C_sum_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_BB_STATUS_X_sum_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_DAYS_CREDIT_min": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_DAYS_CREDIT_max": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_DAYS_CREDIT_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_CREDIT_DAY_OVERDUE_max": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_CREDIT_DAY_OVERDUE_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_CREDIT_DAY_OVERDUE_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_DAYS_CREDIT_ENDDATE_min": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_DAYS_CREDIT_ENDDATE_max": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_DAYS_CREDIT_ENDDATE_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_DAYS_ENDDATE_FACT_min": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_DAYS_ENDDATE_FACT_max": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_DAYS_ENDDATE_FACT_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_AMT_CREDIT_MAX_OVERDUE_max": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_AMT_CREDIT_MAX_OVERDUE_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_AMT_CREDIT_MAX_OVERDUE_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_CNT_CREDIT_PROLONG_sum": [
+            "missing_values"
+        ],
+        "CLOSED_CNT_CREDIT_PROLONG_mean": [
+            "missing_values"
+        ],
+        "CLOSED_AMT_CREDIT_SUM_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_AMT_CREDIT_SUM_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_AMT_CREDIT_SUM_max": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_AMT_CREDIT_SUM_DEBT_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_AMT_CREDIT_SUM_DEBT_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_AMT_CREDIT_SUM_LIMIT_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_AMT_CREDIT_SUM_LIMIT_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_AMT_CREDIT_SUM_OVERDUE_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_AMT_CREDIT_SUM_OVERDUE_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_AMT_CREDIT_SUM_OVERDUE_max": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_DAYS_CREDIT_UPDATE_min": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_DAYS_CREDIT_UPDATE_max": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_DAYS_CREDIT_UPDATE_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_AMT_ANNUITY_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_AMT_ANNUITY_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_AMT_ANNUITY_max": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_BB_MONTHS_BALANCE_min_min": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_BB_MONTHS_BALANCE_max_max": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_BB_MONTHS_BALANCE_mean_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_BB_STATUS_0_sum_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_BB_STATUS_1_sum_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_BB_STATUS_2_sum_sum": [
+            "missing_values"
+        ],
+        "CLOSED_BB_STATUS_3_sum_sum": [
+            "missing_values"
+        ],
+        "CLOSED_BB_STATUS_4_sum_sum": [
+            "missing_values"
+        ],
+        "CLOSED_BB_STATUS_5_sum_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_BB_STATUS_C_sum_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_BB_STATUS_X_sum_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_DAYS_CREDIT_min": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_DAYS_CREDIT_max": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_DAYS_CREDIT_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_CREDIT_DAY_OVERDUE_max": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_CREDIT_DAY_OVERDUE_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_CREDIT_DAY_OVERDUE_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_DAYS_CREDIT_ENDDATE_min": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_DAYS_CREDIT_ENDDATE_max": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_DAYS_CREDIT_ENDDATE_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_DAYS_ENDDATE_FACT_min": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_DAYS_ENDDATE_FACT_max": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_DAYS_ENDDATE_FACT_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_AMT_CREDIT_MAX_OVERDUE_max": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_AMT_CREDIT_MAX_OVERDUE_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_AMT_CREDIT_MAX_OVERDUE_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_CNT_CREDIT_PROLONG_sum": [
+            "missing_values"
+        ],
+        "SOLD_CNT_CREDIT_PROLONG_mean": [
+            "missing_values"
+        ],
+        "SOLD_AMT_CREDIT_SUM_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_AMT_CREDIT_SUM_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_AMT_CREDIT_SUM_max": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_AMT_CREDIT_SUM_DEBT_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_AMT_CREDIT_SUM_DEBT_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_AMT_CREDIT_SUM_LIMIT_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_AMT_CREDIT_SUM_LIMIT_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_AMT_CREDIT_SUM_OVERDUE_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_AMT_CREDIT_SUM_OVERDUE_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_AMT_CREDIT_SUM_OVERDUE_max": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_DAYS_CREDIT_UPDATE_min": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_DAYS_CREDIT_UPDATE_max": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_DAYS_CREDIT_UPDATE_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_AMT_ANNUITY_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_AMT_ANNUITY_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_AMT_ANNUITY_max": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_BB_MONTHS_BALANCE_min_min": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_BB_MONTHS_BALANCE_max_max": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_BB_MONTHS_BALANCE_mean_mean": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_BB_STATUS_0_sum_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_BB_STATUS_1_sum_sum": [
+            "missing_values"
+        ],
+        "SOLD_BB_STATUS_2_sum_sum": [
+            "missing_values"
+        ],
+        "SOLD_BB_STATUS_3_sum_sum": [
+            "missing_values"
+        ],
+        "SOLD_BB_STATUS_4_sum_sum": [
+            "missing_values"
+        ],
+        "SOLD_BB_STATUS_5_sum_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_BB_STATUS_C_sum_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_BB_STATUS_X_sum_sum": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_CREDIT_TYPE_Another type of loan": [
+            "missing_values"
+        ],
+        "ALL_CREDIT_TYPE_Car loan": [
+            "missing_values"
+        ],
+        "ALL_CREDIT_TYPE_Cash loan (non-earmarked)": [
+            "missing_values"
+        ],
+        "ALL_CREDIT_TYPE_Consumer credit": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_CREDIT_TYPE_Credit card": [
+            "missing_values",
+            "scale"
+        ],
+        "ALL_CREDIT_TYPE_Interbank credit": [
+            "missing_values"
+        ],
+        "ALL_CREDIT_TYPE_Loan for business development": [
+            "missing_values"
+        ],
+        "ALL_CREDIT_TYPE_Loan for purchase of shares (margin lending)": [
+            "missing_values"
+        ],
+        "ALL_CREDIT_TYPE_Loan for the purchase of equipment": [
+            "missing_values"
+        ],
+        "ALL_CREDIT_TYPE_Loan for working capital replenishment": [
+            "missing_values"
+        ],
+        "ALL_CREDIT_TYPE_Microloan": [
+            "missing_values"
+        ],
+        "ALL_CREDIT_TYPE_Mobile operator loan": [
+            "missing_values"
+        ],
+        "ALL_CREDIT_TYPE_Mortgage": [
+            "missing_values"
+        ],
+        "ALL_CREDIT_TYPE_Real estate loan": [
+            "missing_values"
+        ],
+        "ALL_CREDIT_TYPE_Unknown type of loan": [
+            "missing_values"
+        ],
+        "ACTIVE_CREDIT_TYPE_Another type of loan": [
+            "missing_values"
+        ],
+        "ACTIVE_CREDIT_TYPE_Car loan": [
+            "missing_values"
+        ],
+        "ACTIVE_CREDIT_TYPE_Cash loan (non-earmarked)": [
+            "missing_values"
+        ],
+        "ACTIVE_CREDIT_TYPE_Consumer credit": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_CREDIT_TYPE_Credit card": [
+            "missing_values",
+            "scale"
+        ],
+        "ACTIVE_CREDIT_TYPE_Loan for business development": [
+            "missing_values"
+        ],
+        "ACTIVE_CREDIT_TYPE_Loan for purchase of shares (margin lending)": [
+            "missing_values"
+        ],
+        "ACTIVE_CREDIT_TYPE_Loan for the purchase of equipment": [
+            "missing_values"
+        ],
+        "ACTIVE_CREDIT_TYPE_Loan for working capital replenishment": [
+            "missing_values"
+        ],
+        "ACTIVE_CREDIT_TYPE_Microloan": [
+            "missing_values"
+        ],
+        "ACTIVE_CREDIT_TYPE_Mobile operator loan": [
+            "missing_values"
+        ],
+        "ACTIVE_CREDIT_TYPE_Mortgage": [
+            "missing_values"
+        ],
+        "ACTIVE_CREDIT_TYPE_Real estate loan": [
+            "missing_values"
+        ],
+        "ACTIVE_CREDIT_TYPE_Unknown type of loan": [
+            "missing_values"
+        ],
+        "CLOSED_CREDIT_TYPE_Another type of loan": [
+            "missing_values"
+        ],
+        "CLOSED_CREDIT_TYPE_Car loan": [
+            "missing_values"
+        ],
+        "CLOSED_CREDIT_TYPE_Cash loan (non-earmarked)": [
+            "missing_values"
+        ],
+        "CLOSED_CREDIT_TYPE_Consumer credit": [
+            "missing_values",
+            "scale"
+        ],
+        "CLOSED_CREDIT_TYPE_Credit card": [
+            "missing_values"
+        ],
+        "CLOSED_CREDIT_TYPE_Interbank credit": [
+            "missing_values"
+        ],
+        "CLOSED_CREDIT_TYPE_Loan for business development": [
+            "missing_values"
+        ],
+        "CLOSED_CREDIT_TYPE_Loan for purchase of shares (margin lending)": [
+            "missing_values"
+        ],
+        "CLOSED_CREDIT_TYPE_Loan for the purchase of equipment": [
+            "missing_values"
+        ],
+        "CLOSED_CREDIT_TYPE_Loan for working capital replenishment": [
+            "missing_values"
+        ],
+        "CLOSED_CREDIT_TYPE_Microloan": [
+            "missing_values"
+        ],
+        "CLOSED_CREDIT_TYPE_Mortgage": [
+            "missing_values"
+        ],
+        "CLOSED_CREDIT_TYPE_Real estate loan": [
+            "missing_values"
+        ],
+        "CLOSED_CREDIT_TYPE_Unknown type of loan": [
+            "missing_values"
+        ],
+        "SOLD_CREDIT_TYPE_Another type of loan": [
+            "missing_values"
+        ],
+        "SOLD_CREDIT_TYPE_Car loan": [
+            "missing_values"
+        ],
+        "SOLD_CREDIT_TYPE_Cash loan (non-earmarked)": [
+            "missing_values"
+        ],
+        "SOLD_CREDIT_TYPE_Consumer credit": [
+            "missing_values",
+            "scale"
+        ],
+        "SOLD_CREDIT_TYPE_Credit card": [
+            "missing_values"
+        ],
+        "SOLD_CREDIT_TYPE_Loan for business development": [
+            "missing_values"
+        ],
+        "SOLD_CREDIT_TYPE_Loan for working capital replenishment": [
+            "missing_values"
+        ],
+        "SOLD_CREDIT_TYPE_Microloan": [
+            "missing_values"
+        ],
+        "SOLD_CREDIT_TYPE_Mortgage": [
+            "missing_values"
+        ],
+        "SOLD_CREDIT_TYPE_Real estate loan": [
+            "missing_values"
+        ],
+        "CREDIT_ACTIVE_COUNT_ACTIVE": [
+            "missing_values",
+            "scale"
+        ],
+        "CREDIT_ACTIVE_COUNT_BAD DEBT": [
+            "missing_values"
+        ],
+        "CREDIT_ACTIVE_COUNT_CLOSED": [
+            "missing_values",
+            "scale"
+        ],
+        "CREDIT_ACTIVE_COUNT_SOLD": [
+            "missing_values"
+        ],
+        "DEBT_RATIO": [
+            "missing_values"
+        ],
+        "OVERDUE_RATIO": [
+            "missing_values"
+        ],
+        "BUREAU_LOAN_COUNT": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_AMT_ANNUITY_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_AMT_ANNUITY_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_AMT_ANNUITY_SUM": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_AMT_APPLICATION_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_AMT_APPLICATION_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_AMT_APPLICATION_SUM": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_AMT_CREDIT_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_AMT_CREDIT_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_AMT_CREDIT_SUM": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_AMT_DOWN_PAYMENT_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_AMT_DOWN_PAYMENT_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_AMT_DOWN_PAYMENT_SUM": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_AMT_GOODS_PRICE_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_AMT_GOODS_PRICE_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_AMT_GOODS_PRICE_SUM": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_HOUR_APPR_PROCESS_START_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_HOUR_APPR_PROCESS_START_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_HOUR_APPR_PROCESS_START_MIN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_RATE_DOWN_PAYMENT_MEAN": [
+            "missing_values"
+        ],
+        "PREV_RATE_DOWN_PAYMENT_MAX": [
+            "missing_values"
+        ],
+        "PREV_RATE_DOWN_PAYMENT_MIN": [
+            "missing_values"
+        ],
+        "PREV_DAYS_DECISION_MIN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_DAYS_DECISION_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_DAYS_DECISION_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_MONTHS_BALANCE_MIN_MIN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_MONTHS_BALANCE_MAX_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_MONTHS_BALANCE_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_AMT_BALANCE_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_AMT_BALANCE_MAX_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_AMT_BALANCE_SUM_SUM": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_AMT_CREDIT_LIMIT_ACTUAL_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_AMT_CREDIT_LIMIT_ACTUAL_MAX_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_AMT_DRAWINGS_ATM_CURRENT_SUM_SUM": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_AMT_DRAWINGS_ATM_CURRENT_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_AMT_DRAWINGS_CURRENT_SUM_SUM": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_AMT_DRAWINGS_CURRENT_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_AMT_DRAWINGS_POS_CURRENT_SUM_SUM": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_AMT_DRAWINGS_POS_CURRENT_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_AMT_PAYMENT_CURRENT_SUM_SUM": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_AMT_PAYMENT_CURRENT_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_AMT_PAYMENT_TOTAL_CURRENT_SUM_SUM": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_AMT_PAYMENT_TOTAL_CURRENT_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_AMT_RECEIVABLE_PRINCIPAL_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_AMT_RECEIVABLE_PRINCIPAL_MAX_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_AMT_RECIVABLE_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_AMT_RECIVABLE_MAX_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_AMT_TOTAL_RECEIVABLE_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_AMT_TOTAL_RECEIVABLE_MAX_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_CNT_DRAWINGS_CURRENT_SUM_SUM": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_CNT_DRAWINGS_CURRENT_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_CNT_DRAWINGS_ATM_CURRENT_SUM_SUM": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_CNT_DRAWINGS_ATM_CURRENT_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_CNT_DRAWINGS_POS_CURRENT_SUM_SUM": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_CNT_DRAWINGS_POS_CURRENT_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_SK_DPD_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_SK_DPD_MAX_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_SK_DPD_SUM_SUM": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_SK_DPD_DEF_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_SK_DPD_DEF_MAX_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_CCB_SK_DPD_DEF_SUM_SUM": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_NUM_INSTALMENT_VERSION_NUNIQUE_NUNIQUE": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_NUM_INSTALMENT_NUMBER_MAX_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_NUM_INSTALMENT_NUMBER_COUNT_COUNT": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_AMT_INSTALMENT_SUM_SUM": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_AMT_INSTALMENT_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_AMT_INSTALMENT_MAX_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_AMT_PAYMENT_SUM_SUM": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_AMT_PAYMENT_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_AMT_PAYMENT_MAX_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_DAYS_INSTALMENT_MIN_MIN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_DAYS_INSTALMENT_MAX_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_DAYS_INSTALMENT_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_DAYS_ENTRY_PAYMENT_MIN_MIN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_DAYS_ENTRY_PAYMENT_MAX_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_DAYS_ENTRY_PAYMENT_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_PAYMENT_PERC_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_PAYMENT_PERC_STD_STD": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_PAYMENT_DIFF_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_PAYMENT_DIFF_STD_STD": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_PAYMENT_DIFF_MIN_MIN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_PAYMENT_DIFF_MAX_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_DPD_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_DPD_SUM_SUM": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_DPD_MAX_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_EARLY_PAYMENT_MEAN_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_EARLY_PAYMENT_SUM_SUM": [
+            "missing_values",
+            "scale"
+        ],
+        "PREV_INST_EARLY_REPAY_LOAN_MAX_MEAN": [
+            "missing_values"
+        ],
+        "NAME_CONTRACT_STATUS_Approved": [
+            "missing_values",
+            "scale"
+        ],
+        "NAME_CONTRACT_STATUS_Canceled": [
+            "missing_values",
+            "scale"
+        ],
+        "NAME_CONTRACT_STATUS_Refused": [
+            "missing_values",
+            "scale"
+        ],
+        "NAME_CONTRACT_STATUS_Unused offer": [
+            "missing_values"
+        ],
+        "NAME_PAYMENT_TYPE_Cash through the bank": [
+            "missing_values",
+            "scale"
+        ],
+        "NAME_PAYMENT_TYPE_Cashless from the account of the employer": [
+            "missing_values"
+        ],
+        "NAME_PAYMENT_TYPE_Non-cash from your account": [
+            "missing_values"
+        ],
+        "NAME_PAYMENT_TYPE_XNA": [
+            "missing_values",
+            "scale"
+        ],
+        "NAME_CLIENT_TYPE_New": [
+            "missing_values",
+            "scale"
+        ],
+        "NAME_CLIENT_TYPE_Refreshed": [
+            "missing_values"
+        ],
+        "NAME_CLIENT_TYPE_Repeater": [
+            "missing_values",
+            "scale"
+        ],
+        "NAME_CLIENT_TYPE_XNA": [
+            "missing_values"
+        ],
+        "NAME_CONTRACT_TYPE_Cash loans": [
+            "missing_values",
+            "scale"
+        ],
+        "NAME_CONTRACT_TYPE_Consumer loans": [
+            "missing_values",
+            "scale"
+        ],
+        "NAME_CONTRACT_TYPE_Revolving loans": [
+            "missing_values",
+            "scale"
+        ],
+        "NAME_CONTRACT_TYPE_XNA": [
+            "missing_values"
+        ],
+        "WEEKDAY_APPR_PROCESS_START_FRIDAY": [
+            "missing_values",
+            "scale"
+        ],
+        "WEEKDAY_APPR_PROCESS_START_MONDAY": [
+            "missing_values",
+            "scale"
+        ],
+        "WEEKDAY_APPR_PROCESS_START_SATURDAY": [
+            "missing_values",
+            "scale"
+        ],
+        "WEEKDAY_APPR_PROCESS_START_SUNDAY": [
+            "missing_values"
+        ],
+        "WEEKDAY_APPR_PROCESS_START_THURSDAY": [
+            "missing_values",
+            "scale"
+        ],
+        "WEEKDAY_APPR_PROCESS_START_TUESDAY": [
+            "missing_values",
+            "scale"
+        ],
+        "WEEKDAY_APPR_PROCESS_START_WEDNESDAY": [
+            "missing_values",
+            "scale"
+        ],
+        "POS_MONTHS_BALANCE_MIN": [
+            "missing_values",
+            "scale"
+        ],
+        "POS_MONTHS_BALANCE_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "POS_MONTHS_BALANCE_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "POS_SK_DPD_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "POS_SK_DPD_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "POS_SK_DPD_SUM": [
+            "missing_values",
+            "scale"
+        ],
+        "POS_SK_DPD_DEF_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "POS_SK_DPD_DEF_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "POS_SK_DPD_DEF_SUM": [
+            "missing_values",
+            "scale"
+        ],
+        "POS_CNT_INSTALMENT_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "POS_CNT_INSTALMENT_MAX": [
+            "missing_values",
+            "scale"
+        ],
+        "POS_CNT_INSTALMENT_FUTURE_MEAN": [
+            "missing_values",
+            "scale"
+        ],
+        "POS_CNT_INSTALMENT_FUTURE_MAX": [
+            "missing_values",
+            "scale"
+        ]
+    },
+    "target_info": [],
+    "n_features": 481,
+    "is_sample_weighted": true,
+    "is_fairness_applied": false,
+    "n_classes": 2
+}

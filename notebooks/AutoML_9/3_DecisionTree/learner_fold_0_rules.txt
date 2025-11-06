@@ -1,0 +1,8 @@
+if (EXT_SOURCE_2 > 0.465) and (EXT_SOURCE_3 > 0.316) then class: 0 (proba: 64.75%) | based on 160,483 samples
+
+if (EXT_SOURCE_2 <= 0.465) and (EXT_SOURCE_3 <= 0.536) then class: 1 (proba: 68.88%) | based on 59,482 samples
+
+if (EXT_SOURCE_2 <= 0.465) and (EXT_SOURCE_3 > 0.536) then class: 0 (proba: 53.76%) | based on 32,030 samples
+
+if (EXT_SOURCE_2 > 0.465) and (EXT_SOURCE_3 <= 0.316) then class: 1 (proba: 61.9%) | based on 24,760 samples
+

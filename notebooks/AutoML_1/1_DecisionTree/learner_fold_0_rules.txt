@@ -1,0 +1,32 @@
+if (EXT_SOURCE_2 > 0.465) and (EXT_SOURCE_3 > 0.316) and (EXT_SOURCE_3 <= 0.54) and (EXT_SOURCE_2 <= 0.664) then class: 0 (proba: 53.7%) | based on 52,773 samples
+
+if (EXT_SOURCE_2 > 0.465) and (EXT_SOURCE_3 > 0.316) and (EXT_SOURCE_3 > 0.54) and (PREV_INST_DPD_MEAN_MEAN <= 0.076) then class: 0 (proba: 77.59%) | based on 49,231 samples
+
+if (EXT_SOURCE_2 <= 0.465) and (EXT_SOURCE_3 <= 0.536) and (EXT_SOURCE_3 > 0.245) and (EXT_SOURCE_2 > 0.172) then class: 1 (proba: 60.94%) | based on 37,847 samples
+
+if (EXT_SOURCE_2 > 0.465) and (EXT_SOURCE_3 > 0.316) and (EXT_SOURCE_3 <= 0.54) and (EXT_SOURCE_2 > 0.664) then class: 0 (proba: 67.74%) | based on 29,892 samples
+
+if (EXT_SOURCE_2 > 0.465) and (EXT_SOURCE_3 > 0.316) and (EXT_SOURCE_3 > 0.54) and (PREV_INST_DPD_MEAN_MEAN > 0.076) then class: 0 (proba: 66.91%) | based on 28,587 samples
+
+if (EXT_SOURCE_2 > 0.465) and (EXT_SOURCE_3 <= 0.316) and (EXT_SOURCE_3 > 0.141) and (EXT_SOURCE_1 <= 0.513) then class: 1 (proba: 61.13%) | based on 14,922 samples
+
+if (EXT_SOURCE_2 <= 0.465) and (EXT_SOURCE_3 > 0.536) and (EXT_SOURCE_2 > 0.248) and (CODE_GENDER <= 0.5) then class: 0 (proba: 65.35%) | based on 14,274 samples
+
+if (EXT_SOURCE_2 <= 0.465) and (EXT_SOURCE_3 <= 0.536) and (EXT_SOURCE_3 > 0.245) and (EXT_SOURCE_2 <= 0.172) then class: 1 (proba: 75.08%) | based on 11,389 samples
+
+if (EXT_SOURCE_2 <= 0.465) and (EXT_SOURCE_3 > 0.536) and (EXT_SOURCE_2 <= 0.248) and (CODE_GENDER <= 0.5) then class: 1 (proba: 50.01%) | based on 7,256 samples
+
+if (EXT_SOURCE_2 <= 0.465) and (EXT_SOURCE_3 > 0.536) and (EXT_SOURCE_2 > 0.248) and (CODE_GENDER > 0.5) then class: 0 (proba: 51.05%) | based on 7,044 samples
+
+if (EXT_SOURCE_2 <= 0.465) and (EXT_SOURCE_3 <= 0.536) and (EXT_SOURCE_3 <= 0.245) and (EXT_SOURCE_2 > 0.207) then class: 1 (proba: 76.98%) | based on 6,784 samples
+
+if (EXT_SOURCE_2 > 0.465) and (EXT_SOURCE_3 <= 0.316) and (EXT_SOURCE_3 > 0.141) and (EXT_SOURCE_1 > 0.513) then class: 0 (proba: 56.03%) | based on 4,514 samples
+
+if (EXT_SOURCE_2 <= 0.465) and (EXT_SOURCE_3 <= 0.536) and (EXT_SOURCE_3 <= 0.245) and (EXT_SOURCE_2 <= 0.207) then class: 1 (proba: 85.75%) | based on 3,462 samples
+
+if (EXT_SOURCE_2 <= 0.465) and (EXT_SOURCE_3 > 0.536) and (EXT_SOURCE_2 <= 0.248) and (CODE_GENDER > 0.5) then class: 1 (proba: 64.8%) | based on 3,456 samples
+
+if (EXT_SOURCE_2 > 0.465) and (EXT_SOURCE_3 <= 0.316) and (EXT_SOURCE_3 <= 0.141) and (EXT_SOURCE_2 <= 0.633) then class: 1 (proba: 76.48%) | based on 3,025 samples
+
+if (EXT_SOURCE_2 > 0.465) and (EXT_SOURCE_3 <= 0.316) and (EXT_SOURCE_3 <= 0.141) and (EXT_SOURCE_2 > 0.633) then class: 1 (proba: 64.56%) | based on 2,299 samples
+

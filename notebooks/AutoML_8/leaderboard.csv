@@ -1,0 +1,11 @@
+name,model_type,metric_type,metric_value,train_time
+1_DecisionTree,Decision Tree,auc,0.6974708929134472,204.82
+2_DecisionTree,Decision Tree,auc,0.6550172785540641,166.0
+3_DecisionTree,Decision Tree,auc,0.6550172785540641,165.08
+4_Default_LightGBM,LightGBM,auc,0.7828158642803016,310.15
+5_Default_Xgboost,Xgboost,auc,0.7807085421661794,257.61
+15_LightGBM,LightGBM,auc,0.781293723422137,189.73
+6_Xgboost,Xgboost,auc,0.779222074926151,213.25
+24_CatBoost,CatBoost,auc,0.7820600936059909,498.67
+33_RandomForest,Random Forest,auc,0.7361167759364309,2742.55
+Ensemble,Ensemble,auc,0.786388369135454,5.53

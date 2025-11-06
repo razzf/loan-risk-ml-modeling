@@ -1,0 +1,3367 @@
+{
+    "uid": "8814cf29-70d9-4497-96dd-f0db70d4ea53",
+    "name": "6_Xgboost",
+    "preprocessing": [
+        {
+            "remove_columns": [
+                "SOURCE"
+            ],
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "AMT_ANNUITY": 24930.0,
+                        "AMT_GOODS_PRICE": 450000.0,
+                        "NAME_TYPE_SUITE": "Unaccompanied",
+                        "OWN_CAR_AGE": 9.0,
+                        "OCCUPATION_TYPE": "Laborers",
+                        "CNT_FAM_MEMBERS": 2.0,
+                        "EXT_SOURCE_1": 0.5056278260030401,
+                        "EXT_SOURCE_2": 0.5658110109425575,
+                        "EXT_SOURCE_3": 0.5370699579791587,
+                        "APARTMENTS_AVG": 0.0876,
+                        "BASEMENTAREA_AVG": 0.0763,
+                        "YEARS_BEGINEXPLUATATION_AVG": 0.9816,
+                        "YEARS_BUILD_AVG": 0.7552,
+                        "COMMONAREA_AVG": 0.0211,
+                        "ELEVATORS_AVG": 0.0,
+                        "ENTRANCES_AVG": 0.1379,
+                        "FLOORSMAX_AVG": 0.1667,
+                        "FLOORSMIN_AVG": 0.2083,
+                        "LANDAREA_AVG": 0.0481,
+                        "LIVINGAPARTMENTS_AVG": 0.0756,
+                        "LIVINGAREA_AVG": 0.0744,
+                        "NONLIVINGAPARTMENTS_AVG": 0.0,
+                        "NONLIVINGAREA_AVG": 0.0036,
+                        "APARTMENTS_MODE": 0.084,
+                        "BASEMENTAREA_MODE": 0.0746,
+                        "YEARS_BEGINEXPLUATATION_MODE": 0.9816,
+                        "YEARS_BUILD_MODE": 0.7648,
+                        "COMMONAREA_MODE": 0.019,
+                        "ELEVATORS_MODE": 0.0,
+                        "ENTRANCES_MODE": 0.1379,
+                        "FLOORSMAX_MODE": 0.1667,
+                        "FLOORSMIN_MODE": 0.2083,
+                        "LANDAREA_MODE": 0.0458,
+                        "LIVINGAPARTMENTS_MODE": 0.0762,
+                        "LIVINGAREA_MODE": 0.0731,
+                        "NONLIVINGAPARTMENTS_MODE": 0.0,
+                        "NONLIVINGAREA_MODE": 0.0011,
+                        "APARTMENTS_MEDI": 0.0864,
+                        "BASEMENTAREA_MEDI": 0.0758,
+                        "YEARS_BEGINEXPLUATATION_MEDI": 0.9816,
+                        "YEARS_BUILD_MEDI": 0.7585,
+                        "COMMONAREA_MEDI": 0.0208,
+                        "ELEVATORS_MEDI": 0.0,
+                        "ENTRANCES_MEDI": 0.1379,
+                        "FLOORSMAX_MEDI": 0.1667,
+                        "FLOORSMIN_MEDI": 0.2083,
+                        "LANDAREA_MEDI": 0.0486,
+                        "LIVINGAPARTMENTS_MEDI": 0.0761,
+                        "LIVINGAREA_MEDI": 0.0748,
+                        "NONLIVINGAPARTMENTS_MEDI": 0.0,
+                        "NONLIVINGAREA_MEDI": 0.003,
+                        "FONDKAPREMONT_MODE": "reg oper account",
+                        "HOUSETYPE_MODE": "block of flats",
+                        "TOTALAREA_MODE": 0.0688,
+                        "WALLSMATERIAL_MODE": "Panel",
+                        "EMERGENCYSTATE_MODE": "No",
+                        "OBS_30_CNT_SOCIAL_CIRCLE": 0.0,
+                        "DEF_30_CNT_SOCIAL_CIRCLE": 0.0,
+                        "OBS_60_CNT_SOCIAL_CIRCLE": 0.0,
+                        "DEF_60_CNT_SOCIAL_CIRCLE": 0.0,
+                        "DAYS_LAST_PHONE_CHANGE": -756.0,
+                        "AMT_REQ_CREDIT_BUREAU_HOUR": 0.0,
+                        "AMT_REQ_CREDIT_BUREAU_DAY": 0.0,
+                        "AMT_REQ_CREDIT_BUREAU_WEEK": 0.0,
+                        "AMT_REQ_CREDIT_BUREAU_MON": 0.0,
+                        "AMT_REQ_CREDIT_BUREAU_QRT": 0.0,
+                        "AMT_REQ_CREDIT_BUREAU_YEAR": 1.0,
+                        "ALL_DAYS_CREDIT_min": -1825.0,
+                        "ALL_DAYS_CREDIT_max": -301.0,
+                        "ALL_DAYS_CREDIT_mean": -1049.5,
+                        "ALL_CREDIT_DAY_OVERDUE_max": 0.0,
+                        "ALL_CREDIT_DAY_OVERDUE_mean": 0.0,
+                        "ALL_CREDIT_DAY_OVERDUE_sum": 0.0,
+                        "ALL_DAYS_CREDIT_ENDDATE_min": -1267.0,
+                        "ALL_DAYS_CREDIT_ENDDATE_max": 909.0,
+                        "ALL_DAYS_CREDIT_ENDDATE_mean": -135.30769230769232,
+                        "ALL_DAYS_ENDDATE_FACT_min": -1449.0,
+                        "ALL_DAYS_ENDDATE_FACT_max": -345.0,
+                        "ALL_DAYS_ENDDATE_FACT_mean": -927.5,
+                        "ALL_AMT_CREDIT_MAX_OVERDUE_max": 0.0,
+                        "ALL_AMT_CREDIT_MAX_OVERDUE_mean": 0.0,
+                        "ALL_AMT_CREDIT_MAX_OVERDUE_sum": 0.0,
+                        "ALL_CNT_CREDIT_PROLONG_sum": 0.0,
+                        "ALL_CNT_CREDIT_PROLONG_mean": 0.0,
+                        "ALL_AMT_CREDIT_SUM_sum": 959013.0,
+                        "ALL_AMT_CREDIT_SUM_mean": 195081.70275,
+                        "ALL_AMT_CREDIT_SUM_max": 450000.0,
+                        "ALL_AMT_CREDIT_SUM_DEBT_sum": 169003.17,
+                        "ALL_AMT_CREDIT_SUM_DEBT_mean": 44188.125,
+                        "ALL_AMT_CREDIT_SUM_LIMIT_sum": 0.0,
+                        "ALL_AMT_CREDIT_SUM_LIMIT_mean": 0.0,
+                        "ALL_AMT_CREDIT_SUM_OVERDUE_sum": 0.0,
+                        "ALL_AMT_CREDIT_SUM_OVERDUE_mean": 0.0,
+                        "ALL_AMT_CREDIT_SUM_OVERDUE_max": 0.0,
+                        "ALL_DAYS_CREDIT_UPDATE_min": -1053.0,
+                        "ALL_DAYS_CREDIT_UPDATE_max": -19.0,
+                        "ALL_DAYS_CREDIT_UPDATE_mean": -481.35714285714283,
+                        "ALL_AMT_ANNUITY_mean": 6467.265,
+                        "ALL_AMT_ANNUITY_sum": 0.0,
+                        "ALL_AMT_ANNUITY_max": 12467.61,
+                        "ALL_BB_MONTHS_BALANCE_min_min": -57.0,
+                        "ALL_BB_MONTHS_BALANCE_max_max": 0.0,
+                        "ALL_BB_MONTHS_BALANCE_mean_mean": -19.9375,
+                        "ALL_BB_STATUS_0_sum_sum": 0.0,
+                        "ALL_BB_STATUS_1_sum_sum": 0.0,
+                        "ALL_BB_STATUS_2_sum_sum": 0.0,
+                        "ALL_BB_STATUS_3_sum_sum": 0.0,
+                        "ALL_BB_STATUS_4_sum_sum": 0.0,
+                        "ALL_BB_STATUS_5_sum_sum": 0.0,
+                        "ALL_BB_STATUS_C_sum_sum": 0.0,
+                        "ALL_BB_STATUS_X_sum_sum": 0.0,
+                        "ACTIVE_DAYS_CREDIT_min": -763.0,
+                        "ACTIVE_DAYS_CREDIT_max": -258.0,
+                        "ACTIVE_DAYS_CREDIT_mean": -537.0,
+                        "ACTIVE_CREDIT_DAY_OVERDUE_max": 0.0,
+                        "ACTIVE_CREDIT_DAY_OVERDUE_mean": 0.0,
+                        "ACTIVE_CREDIT_DAY_OVERDUE_sum": 0.0,
+                        "ACTIVE_DAYS_CREDIT_ENDDATE_min": 252.0,
+                        "ACTIVE_DAYS_CREDIT_ENDDATE_max": 1051.0,
+                        "ACTIVE_DAYS_CREDIT_ENDDATE_mean": 717.4444444444445,
+                        "ACTIVE_DAYS_ENDDATE_FACT_min": -2048.0,
+                        "ACTIVE_DAYS_ENDDATE_FACT_max": -1906.0,
+                        "ACTIVE_DAYS_ENDDATE_FACT_mean": -1982.5,
+                        "ACTIVE_AMT_CREDIT_MAX_OVERDUE_max": 0.0,
+                        "ACTIVE_AMT_CREDIT_MAX_OVERDUE_mean": 0.0,
+                        "ACTIVE_AMT_CREDIT_MAX_OVERDUE_sum": 0.0,
+                        "ACTIVE_CNT_CREDIT_PROLONG_sum": 0.0,
+                        "ACTIVE_CNT_CREDIT_PROLONG_mean": 0.0,
+                        "ACTIVE_AMT_CREDIT_SUM_sum": 646989.7949999999,
+                        "ACTIVE_AMT_CREDIT_SUM_mean": 274500.0,
+                        "ACTIVE_AMT_CREDIT_SUM_max": 450000.0,
+                        "ACTIVE_AMT_CREDIT_SUM_DEBT_sum": 276106.68,
+                        "ACTIVE_AMT_CREDIT_SUM_DEBT_mean": 147494.25,
+                        "ACTIVE_AMT_CREDIT_SUM_LIMIT_sum": 0.0,
+                        "ACTIVE_AMT_CREDIT_SUM_LIMIT_mean": 0.0,
+                        "ACTIVE_AMT_CREDIT_SUM_OVERDUE_sum": 0.0,
+                        "ACTIVE_AMT_CREDIT_SUM_OVERDUE_mean": 0.0,
+                        "ACTIVE_AMT_CREDIT_SUM_OVERDUE_max": 0.0,
+                        "ACTIVE_DAYS_CREDIT_UPDATE_min": -38.0,
+                        "ACTIVE_DAYS_CREDIT_UPDATE_max": -15.0,
+                        "ACTIVE_DAYS_CREDIT_UPDATE_mean": -30.0,
+                        "ACTIVE_AMT_ANNUITY_mean": 8068.68,
+                        "ACTIVE_AMT_ANNUITY_sum": 0.0,
+                        "ACTIVE_AMT_ANNUITY_max": 11070.0,
+                        "ACTIVE_BB_MONTHS_BALANCE_min_min": -24.0,
+                        "ACTIVE_BB_MONTHS_BALANCE_max_max": 0.0,
+                        "ACTIVE_BB_MONTHS_BALANCE_mean_mean": -9.25,
+                        "ACTIVE_BB_STATUS_0_sum_sum": 0.0,
+                        "ACTIVE_BB_STATUS_1_sum_sum": 0.0,
+                        "ACTIVE_BB_STATUS_2_sum_sum": 0.0,
+                        "ACTIVE_BB_STATUS_3_sum_sum": 0.0,
+                        "ACTIVE_BB_STATUS_4_sum_sum": 0.0,
+                        "ACTIVE_BB_STATUS_5_sum_sum": 0.0,
+                        "ACTIVE_BB_STATUS_C_sum_sum": 0.0,
+                        "ACTIVE_BB_STATUS_X_sum_sum": 0.0,
+                        "CLOSED_DAYS_CREDIT_min": -1997.0,
+                        "CLOSED_DAYS_CREDIT_max": -728.0,
+                        "CLOSED_DAYS_CREDIT_mean": -1365.0,
+                        "CLOSED_CREDIT_DAY_OVERDUE_max": 0.0,
+                        "CLOSED_CREDIT_DAY_OVERDUE_mean": 0.0,
+                        "CLOSED_CREDIT_DAY_OVERDUE_sum": 0.0,
+                        "CLOSED_DAYS_CREDIT_ENDDATE_min": -1433.0,
+                        "CLOSED_DAYS_CREDIT_ENDDATE_max": -211.0,
+                        "CLOSED_DAYS_CREDIT_ENDDATE_mean": -780.0,
+                        "CLOSED_DAYS_ENDDATE_FACT_min": -1449.0,
+                        "CLOSED_DAYS_ENDDATE_FACT_max": -347.0,
+                        "CLOSED_DAYS_ENDDATE_FACT_mean": -928.0,
+                        "CLOSED_AMT_CREDIT_MAX_OVERDUE_max": 0.0,
+                        "CLOSED_AMT_CREDIT_MAX_OVERDUE_mean": 0.0,
+                        "CLOSED_AMT_CREDIT_MAX_OVERDUE_sum": 0.0,
+                        "CLOSED_CNT_CREDIT_PROLONG_sum": 0.0,
+                        "CLOSED_CNT_CREDIT_PROLONG_mean": 0.0,
+                        "CLOSED_AMT_CREDIT_SUM_sum": 426026.835,
+                        "CLOSED_AMT_CREDIT_SUM_mean": 124919.25,
+                        "CLOSED_AMT_CREDIT_SUM_max": 225000.0,
+                        "CLOSED_AMT_CREDIT_SUM_DEBT_sum": 0.0,
+                        "CLOSED_AMT_CREDIT_SUM_DEBT_mean": 0.0,
+                        "CLOSED_AMT_CREDIT_SUM_LIMIT_sum": 0.0,
+                        "CLOSED_AMT_CREDIT_SUM_LIMIT_mean": 0.0,
+                        "CLOSED_AMT_CREDIT_SUM_OVERDUE_sum": 0.0,
+                        "CLOSED_AMT_CREDIT_SUM_OVERDUE_mean": 0.0,
+                        "CLOSED_AMT_CREDIT_SUM_OVERDUE_max": 0.0,
+                        "CLOSED_DAYS_CREDIT_UPDATE_min": -1172.0,
+                        "CLOSED_DAYS_CREDIT_UPDATE_max": -285.0,
+                        "CLOSED_DAYS_CREDIT_UPDATE_mean": -760.6666666666666,
+                        "CLOSED_AMT_ANNUITY_mean": 3556.6875,
+                        "CLOSED_AMT_ANNUITY_sum": 0.0,
+                        "CLOSED_AMT_ANNUITY_max": 6345.0,
+                        "CLOSED_BB_MONTHS_BALANCE_min_min": -62.0,
+                        "CLOSED_BB_MONTHS_BALANCE_max_max": 0.0,
+                        "CLOSED_BB_MONTHS_BALANCE_mean_mean": -26.166666666666668,
+                        "CLOSED_BB_STATUS_0_sum_sum": 0.0,
+                        "CLOSED_BB_STATUS_1_sum_sum": 0.0,
+                        "CLOSED_BB_STATUS_2_sum_sum": 0.0,
+                        "CLOSED_BB_STATUS_3_sum_sum": 0.0,
+                        "CLOSED_BB_STATUS_4_sum_sum": 0.0,
+                        "CLOSED_BB_STATUS_5_sum_sum": 0.0,
+                        "CLOSED_BB_STATUS_C_sum_sum": 0.0,
+                        "CLOSED_BB_STATUS_X_sum_sum": 0.0,
+                        "SOLD_DAYS_CREDIT_min": -1830.0,
+                        "SOLD_DAYS_CREDIT_max": -1752.0,
+                        "SOLD_DAYS_CREDIT_mean": -1761.0,
+                        "SOLD_CREDIT_DAY_OVERDUE_max": 0.0,
+                        "SOLD_CREDIT_DAY_OVERDUE_mean": 0.0,
+                        "SOLD_CREDIT_DAY_OVERDUE_sum": 0.0,
+                        "SOLD_DAYS_CREDIT_ENDDATE_min": -1068.5,
+                        "SOLD_DAYS_CREDIT_ENDDATE_max": -1003.5,
+                        "SOLD_DAYS_CREDIT_ENDDATE_mean": -1024.0,
+                        "SOLD_DAYS_ENDDATE_FACT_min": -293.0,
+                        "SOLD_DAYS_ENDDATE_FACT_max": -292.0,
+                        "SOLD_DAYS_ENDDATE_FACT_mean": -293.0,
+                        "SOLD_AMT_CREDIT_MAX_OVERDUE_max": 0.0,
+                        "SOLD_AMT_CREDIT_MAX_OVERDUE_mean": 0.0,
+                        "SOLD_AMT_CREDIT_MAX_OVERDUE_sum": 0.0,
+                        "SOLD_CNT_CREDIT_PROLONG_sum": 0.0,
+                        "SOLD_CNT_CREDIT_PROLONG_mean": 0.0,
+                        "SOLD_AMT_CREDIT_SUM_sum": 225000.0,
+                        "SOLD_AMT_CREDIT_SUM_mean": 225000.0,
+                        "SOLD_AMT_CREDIT_SUM_max": 225000.0,
+                        "SOLD_AMT_CREDIT_SUM_DEBT_sum": 0.0,
+                        "SOLD_AMT_CREDIT_SUM_DEBT_mean": 0.0,
+                        "SOLD_AMT_CREDIT_SUM_LIMIT_sum": 0.0,
+                        "SOLD_AMT_CREDIT_SUM_LIMIT_mean": 0.0,
+                        "SOLD_AMT_CREDIT_SUM_OVERDUE_sum": 0.0,
+                        "SOLD_AMT_CREDIT_SUM_OVERDUE_mean": 0.0,
+                        "SOLD_AMT_CREDIT_SUM_OVERDUE_max": 0.0,
+                        "SOLD_DAYS_CREDIT_UPDATE_min": -850.0,
+                        "SOLD_DAYS_CREDIT_UPDATE_max": -813.0,
+                        "SOLD_DAYS_CREDIT_UPDATE_mean": -839.0,
+                        "SOLD_AMT_ANNUITY_mean": 1921.5,
+                        "SOLD_AMT_ANNUITY_sum": 0.0,
+                        "SOLD_AMT_ANNUITY_max": 2020.5,
+                        "SOLD_BB_MONTHS_BALANCE_min_min": -53.0,
+                        "SOLD_BB_MONTHS_BALANCE_max_max": 0.0,
+                        "SOLD_BB_MONTHS_BALANCE_mean_mean": -31.0,
+                        "SOLD_BB_STATUS_0_sum_sum": 0.0,
+                        "SOLD_BB_STATUS_1_sum_sum": 0.0,
+                        "SOLD_BB_STATUS_2_sum_sum": 0.0,
+                        "SOLD_BB_STATUS_3_sum_sum": 0.0,
+                        "SOLD_BB_STATUS_4_sum_sum": 0.0,
+                        "SOLD_BB_STATUS_5_sum_sum": 0.0,
+                        "SOLD_BB_STATUS_C_sum_sum": 0.0,
+                        "SOLD_BB_STATUS_X_sum_sum": 0.0,
+                        "ALL_CREDIT_TYPE_Another type of loan": 0.0,
+                        "ALL_CREDIT_TYPE_Car loan": 0.0,
+                        "ALL_CREDIT_TYPE_Cash loan (non-earmarked)": 0.0,
+                        "ALL_CREDIT_TYPE_Consumer credit": 3.0,
+                        "ALL_CREDIT_TYPE_Credit card": 1.0,
+                        "ALL_CREDIT_TYPE_Interbank credit": 0.0,
+                        "ALL_CREDIT_TYPE_Loan for business development": 0.0,
+                        "ALL_CREDIT_TYPE_Loan for purchase of shares (margin lending)": 0.0,
+                        "ALL_CREDIT_TYPE_Loan for the purchase of equipment": 0.0,
+                        "ALL_CREDIT_TYPE_Loan for working capital replenishment": 0.0,
+                        "ALL_CREDIT_TYPE_Microloan": 0.0,
+                        "ALL_CREDIT_TYPE_Mobile operator loan": 0.0,
+                        "ALL_CREDIT_TYPE_Mortgage": 0.0,
+                        "ALL_CREDIT_TYPE_Real estate loan": 0.0,
+                        "ALL_CREDIT_TYPE_Unknown type of loan": 0.0,
+                        "ACTIVE_CREDIT_TYPE_Another type of loan": 0.0,
+                        "ACTIVE_CREDIT_TYPE_Car loan": 0.0,
+                        "ACTIVE_CREDIT_TYPE_Cash loan (non-earmarked)": 0.0,
+                        "ACTIVE_CREDIT_TYPE_Consumer credit": 1.0,
+                        "ACTIVE_CREDIT_TYPE_Credit card": 1.0,
+                        "ACTIVE_CREDIT_TYPE_Loan for business development": 0.0,
+                        "ACTIVE_CREDIT_TYPE_Loan for purchase of shares (margin lending)": 0.0,
+                        "ACTIVE_CREDIT_TYPE_Loan for the purchase of equipment": 0.0,
+                        "ACTIVE_CREDIT_TYPE_Loan for working capital replenishment": 0.0,
+                        "ACTIVE_CREDIT_TYPE_Microloan": 0.0,
+                        "ACTIVE_CREDIT_TYPE_Mobile operator loan": 0.0,
+                        "ACTIVE_CREDIT_TYPE_Mortgage": 0.0,
+                        "ACTIVE_CREDIT_TYPE_Real estate loan": 0.0,
+                        "ACTIVE_CREDIT_TYPE_Unknown type of loan": 0.0,
+                        "CLOSED_CREDIT_TYPE_Another type of loan": 0.0,
+                        "CLOSED_CREDIT_TYPE_Car loan": 0.0,
+                        "CLOSED_CREDIT_TYPE_Cash loan (non-earmarked)": 0.0,
+                        "CLOSED_CREDIT_TYPE_Consumer credit": 3.0,
+                        "CLOSED_CREDIT_TYPE_Credit card": 0.0,
+                        "CLOSED_CREDIT_TYPE_Interbank credit": 0.0,
+                        "CLOSED_CREDIT_TYPE_Loan for business development": 0.0,
+                        "CLOSED_CREDIT_TYPE_Loan for purchase of shares (margin lending)": 0.0,
+                        "CLOSED_CREDIT_TYPE_Loan for the purchase of equipment": 0.0,
+                        "CLOSED_CREDIT_TYPE_Loan for working capital replenishment": 0.0,
+                        "CLOSED_CREDIT_TYPE_Microloan": 0.0,
+                        "CLOSED_CREDIT_TYPE_Mortgage": 0.0,
+                        "CLOSED_CREDIT_TYPE_Real estate loan": 0.0,
+                        "CLOSED_CREDIT_TYPE_Unknown type of loan": 0.0,
+                        "SOLD_CREDIT_TYPE_Another type of loan": 0.0,
+                        "SOLD_CREDIT_TYPE_Car loan": 0.0,
+                        "SOLD_CREDIT_TYPE_Cash loan (non-earmarked)": 0.0,
+                        "SOLD_CREDIT_TYPE_Consumer credit": 0.0,
+                        "SOLD_CREDIT_TYPE_Credit card": 0.0,
+                        "SOLD_CREDIT_TYPE_Loan for business development": 0.0,
+                        "SOLD_CREDIT_TYPE_Loan for working capital replenishment": 0.0,
+                        "SOLD_CREDIT_TYPE_Microloan": 0.0,
+                        "SOLD_CREDIT_TYPE_Mortgage": 0.0,
+                        "SOLD_CREDIT_TYPE_Real estate loan": 0.0,
+                        "CREDIT_ACTIVE_COUNT_ACTIVE": 2.0,
+                        "CREDIT_ACTIVE_COUNT_BAD DEBT": 0.0,
+                        "CREDIT_ACTIVE_COUNT_CLOSED": 3.0,
+                        "CREDIT_ACTIVE_COUNT_SOLD": 0.0,
+                        "DEBT_RATIO": 0.209864432066161,
+                        "OVERDUE_RATIO": 0.0,
+                        "BUREAU_LOAN_COUNT": 4.0,
+                        "PREV_AMT_ANNUITY_MEAN": 11982.69,
+                        "PREV_AMT_ANNUITY_MAX": 17905.5,
+                        "PREV_AMT_ANNUITY_SUM": 36266.445,
+                        "PREV_AMT_APPLICATION_MEAN": 105895.125,
+                        "PREV_AMT_APPLICATION_MAX": 202500.0,
+                        "PREV_AMT_APPLICATION_SUM": 381363.3,
+                        "PREV_AMT_CREDIT_MEAN": 117326.25,
+                        "PREV_AMT_CREDIT_MAX": 225000.0,
+                        "PREV_AMT_CREDIT_SUM": 427673.25,
+                        "PREV_AMT_DOWN_PAYMENT_MEAN": 3375.0,
+                        "PREV_AMT_DOWN_PAYMENT_MAX": 5850.0,
+                        "PREV_AMT_DOWN_PAYMENT_SUM": 6165.0,
+                        "PREV_AMT_GOODS_PRICE_MEAN": 128431.04625,
+                        "PREV_AMT_GOODS_PRICE_MAX": 202500.0,
+                        "PREV_AMT_GOODS_PRICE_SUM": 381368.25,
+                        "PREV_HOUR_APPR_PROCESS_START_MEAN": 12.75,
+                        "PREV_HOUR_APPR_PROCESS_START_MAX": 15.0,
+                        "PREV_HOUR_APPR_PROCESS_START_MIN": 10.0,
+                        "PREV_RATE_DOWN_PAYMENT_MEAN": 0.06631594985931447,
+                        "PREV_RATE_DOWN_PAYMENT_MAX": 0.1052261747913922,
+                        "PREV_RATE_DOWN_PAYMENT_MIN": 0.0,
+                        "PREV_DAYS_DECISION_MIN": -1503.0,
+                        "PREV_DAYS_DECISION_MAX": -299.0,
+                        "PREV_DAYS_DECISION_MEAN": -789.3333333333334,
+                        "PREV_CCB_MONTHS_BALANCE_MIN_MIN": -22.0,
+                        "PREV_CCB_MONTHS_BALANCE_MAX_MAX": -1.0,
+                        "PREV_CCB_MONTHS_BALANCE_MEAN_MEAN": -11.5,
+                        "PREV_CCB_AMT_BALANCE_MEAN_MEAN": 27248.268912259613,
+                        "PREV_CCB_AMT_BALANCE_MAX_MAX": 97710.075,
+                        "PREV_CCB_AMT_BALANCE_SUM_SUM": 0.0,
+                        "PREV_CCB_AMT_CREDIT_LIMIT_ACTUAL_MEAN_MEAN": 150810.8108108108,
+                        "PREV_CCB_AMT_CREDIT_LIMIT_ACTUAL_MAX_MAX": 180000.0,
+                        "PREV_CCB_AMT_DRAWINGS_ATM_CURRENT_SUM_SUM": 0.0,
+                        "PREV_CCB_AMT_DRAWINGS_ATM_CURRENT_MEAN_MEAN": 4700.301204819278,
+                        "PREV_CCB_AMT_DRAWINGS_CURRENT_SUM_SUM": 0.0,
+                        "PREV_CCB_AMT_DRAWINGS_CURRENT_MEAN_MEAN": 3575.675675675676,
+                        "PREV_CCB_AMT_DRAWINGS_POS_CURRENT_SUM_SUM": 0.0,
+                        "PREV_CCB_AMT_DRAWINGS_POS_CURRENT_MEAN_MEAN": 349.8045263559969,
+                        "PREV_CCB_AMT_PAYMENT_CURRENT_SUM_SUM": 0.0,
+                        "PREV_CCB_AMT_PAYMENT_CURRENT_MEAN_MEAN": 9973.219772727272,
+                        "PREV_CCB_AMT_PAYMENT_TOTAL_CURRENT_SUM_SUM": 0.0,
+                        "PREV_CCB_AMT_PAYMENT_TOTAL_CURRENT_MEAN_MEAN": 4173.818181818182,
+                        "PREV_CCB_AMT_RECEIVABLE_PRINCIPAL_MEAN_MEAN": 26046.095204162277,
+                        "PREV_CCB_AMT_RECEIVABLE_PRINCIPAL_MAX_MAX": 90000.0,
+                        "PREV_CCB_AMT_RECIVABLE_MEAN_MEAN": 26993.884067635903,
+                        "PREV_CCB_AMT_RECIVABLE_MAX_MAX": 97101.8775,
+                        "PREV_CCB_AMT_TOTAL_RECEIVABLE_MEAN_MEAN": 26995.85092477876,
+                        "PREV_CCB_AMT_TOTAL_RECEIVABLE_MAX_MAX": 97129.98000000001,
+                        "PREV_CCB_CNT_DRAWINGS_CURRENT_SUM_SUM": 0.0,
+                        "PREV_CCB_CNT_DRAWINGS_CURRENT_MEAN_MEAN": 0.2222222222222222,
+                        "PREV_CCB_CNT_DRAWINGS_ATM_CURRENT_SUM_SUM": 0.0,
+                        "PREV_CCB_CNT_DRAWINGS_ATM_CURRENT_MEAN_MEAN": 0.27586206896551724,
+                        "PREV_CCB_CNT_DRAWINGS_POS_CURRENT_SUM_SUM": 0.0,
+                        "PREV_CCB_CNT_DRAWINGS_POS_CURRENT_MEAN_MEAN": 0.05194805194805195,
+                        "PREV_CCB_SK_DPD_MEAN_MEAN": 0.0,
+                        "PREV_CCB_SK_DPD_MAX_MAX": 0.0,
+                        "PREV_CCB_SK_DPD_SUM_SUM": 0.0,
+                        "PREV_CCB_SK_DPD_DEF_MEAN_MEAN": 0.0,
+                        "PREV_CCB_SK_DPD_DEF_MAX_MAX": 0.0,
+                        "PREV_CCB_SK_DPD_DEF_SUM_SUM": 0.0,
+                        "PREV_INST_NUM_INSTALMENT_VERSION_NUNIQUE_NUNIQUE": 1.0,
+                        "PREV_INST_NUM_INSTALMENT_NUMBER_MAX_MAX": 12.0,
+                        "PREV_INST_NUM_INSTALMENT_NUMBER_COUNT_COUNT": 2.0,
+                        "PREV_INST_AMT_INSTALMENT_SUM_SUM": 319230.225,
+                        "PREV_INST_AMT_INSTALMENT_MEAN_MEAN": 13686.75,
+                        "PREV_INST_AMT_INSTALMENT_MAX_MAX": 34930.395,
+                        "PREV_INST_AMT_PAYMENT_SUM_SUM": 310243.11750000005,
+                        "PREV_INST_AMT_PAYMENT_MEAN_MEAN": 13426.839,
+                        "PREV_INST_AMT_PAYMENT_MAX_MAX": 35613.945,
+                        "PREV_INST_DAYS_INSTALMENT_MIN_MIN": -1454.0,
+                        "PREV_INST_DAYS_INSTALMENT_MAX_MAX": -54.0,
+                        "PREV_INST_DAYS_INSTALMENT_MEAN_MEAN": -790.0,
+                        "PREV_INST_DAYS_ENTRY_PAYMENT_MIN_MIN": -1467.0,
+                        "PREV_INST_DAYS_ENTRY_PAYMENT_MAX_MAX": -71.0,
+                        "PREV_INST_DAYS_ENTRY_PAYMENT_MEAN_MEAN": -802.2819727891157,
+                        "PREV_INST_PAYMENT_PERC_MEAN_MEAN": 1.0,
+                        "PREV_INST_PAYMENT_PERC_STD_STD": 0.11717536800806796,
+                        "PREV_INST_PAYMENT_DIFF_MEAN_MEAN": 0.0,
+                        "PREV_INST_PAYMENT_DIFF_STD_STD": 933.8879609420345,
+                        "PREV_INST_PAYMENT_DIFF_MIN_MIN": 0.0,
+                        "PREV_INST_PAYMENT_DIFF_MAX_MAX": 0.0,
+                        "PREV_INST_DPD_MEAN_MEAN": 0.022222222222222223,
+                        "PREV_INST_DPD_SUM_SUM": 1.0,
+                        "PREV_INST_DPD_MAX_MAX": 1.0,
+                        "PREV_INST_EARLY_PAYMENT_MEAN_MEAN": 0.8928571428571428,
+                        "PREV_INST_EARLY_PAYMENT_SUM_SUM": 19.0,
+                        "PREV_INST_EARLY_REPAY_LOAN_MAX_MEAN": 0.0,
+                        "NAME_CONTRACT_STATUS_Approved": 3.0,
+                        "NAME_CONTRACT_STATUS_Canceled": 0.0,
+                        "NAME_CONTRACT_STATUS_Refused": 0.0,
+                        "NAME_CONTRACT_STATUS_Unused offer": 0.0,
+                        "NAME_PAYMENT_TYPE_Cash through the bank": 2.0,
+                        "NAME_PAYMENT_TYPE_Cashless from the account of the employer": 0.0,
+                        "NAME_PAYMENT_TYPE_Non-cash from your account": 0.0,
+                        "NAME_PAYMENT_TYPE_XNA": 1.0,
+                        "NAME_CLIENT_TYPE_New": 1.0,
+                        "NAME_CLIENT_TYPE_Refreshed": 0.0,
+                        "NAME_CLIENT_TYPE_Repeater": 2.0,
+                        "NAME_CLIENT_TYPE_XNA": 0.0,
+                        "NAME_CONTRACT_TYPE_Cash loans": 1.0,
+                        "NAME_CONTRACT_TYPE_Consumer loans": 2.0,
+                        "NAME_CONTRACT_TYPE_Revolving loans": 0.0,
+                        "NAME_CONTRACT_TYPE_XNA": 0.0,
+                        "WEEKDAY_APPR_PROCESS_START_FRIDAY": 0.0,
+                        "WEEKDAY_APPR_PROCESS_START_MONDAY": 0.0,
+                        "WEEKDAY_APPR_PROCESS_START_SATURDAY": 0.0,
+                        "WEEKDAY_APPR_PROCESS_START_SUNDAY": 0.0,
+                        "WEEKDAY_APPR_PROCESS_START_THURSDAY": 0.0,
+                        "WEEKDAY_APPR_PROCESS_START_TUESDAY": 0.0,
+                        "WEEKDAY_APPR_PROCESS_START_WEDNESDAY": 0.0,
+                        "POS_MONTHS_BALANCE_MIN": -51.0,
+                        "POS_MONTHS_BALANCE_MAX": -4.0,
+                        "POS_MONTHS_BALANCE_MEAN": -28.6,
+                        "POS_SK_DPD_MEAN": 0.0,
+                        "POS_SK_DPD_MAX": 0.0,
+                        "POS_SK_DPD_SUM": 0.0,
+                        "POS_SK_DPD_DEF_MEAN": 0.0,
+                        "POS_SK_DPD_DEF_MAX": 0.0,
+                        "POS_SK_DPD_DEF_SUM": 0.0,
+                        "POS_CNT_INSTALMENT_MEAN": 12.0,
+                        "POS_CNT_INSTALMENT_MAX": 12.0,
+                        "POS_CNT_INSTALMENT_FUTURE_MEAN": 6.946428571428571,
+                        "POS_CNT_INSTALMENT_FUTURE_MAX": 12.0
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "NAME_CONTRACT_TYPE": {
+                            "Cash loans": 0,
+                            "Revolving loans": 1
+                        },
+                        "CODE_GENDER": {
+                            "F": 0,
+                            "M": 1,
+                            "XNA": 2
+                        },
+                        "FLAG_OWN_CAR": {
+                            "N": 0,
+                            "Y": 1
+                        },
+                        "FLAG_OWN_REALTY": {
+                            "N": 0,
+                            "Y": 1
+                        },
+                        "NAME_TYPE_SUITE": {
+                            "Children": 0,
+                            "Family": 1,
+                            "Group of people": 2,
+                            "Other_A": 3,
+                            "Other_B": 4,
+                            "Spouse, partner": 5,
+                            "Unaccompanied": 6
+                        },
+                        "NAME_INCOME_TYPE": {
+                            "Businessman": 0,
+                            "Commercial associate": 1,
+                            "Maternity leave": 2,
+                            "Pensioner": 3,
+                            "State servant": 4,
+                            "Student": 5,
+                            "Unemployed": 6,
+                            "Working": 7
+                        },
+                        "NAME_EDUCATION_TYPE": {
+                            "Academic degree": 0,
+                            "Higher education": 1,
+                            "Incomplete higher": 2,
+                            "Lower secondary": 3,
+                            "Secondary / secondary special": 4
+                        },
+                        "NAME_FAMILY_STATUS": {
+                            "Civil marriage": 0,
+                            "Married": 1,
+                            "Separated": 2,
+                            "Single / not married": 3,
+                            "Unknown": 4,
+                            "Widow": 5
+                        },
+                        "NAME_HOUSING_TYPE": {
+                            "Co-op apartment": 0,
+                            "House / apartment": 1,
+                            "Municipal apartment": 2,
+                            "Office apartment": 3,
+                            "Rented apartment": 4,
+                            "With parents": 5
+                        },
+                        "OCCUPATION_TYPE": {
+                            "Accountants": 0,
+                            "Cleaning staff": 1,
+                            "Cooking staff": 2,
+                            "Core staff": 3,
+                            "Drivers": 4,
+                            "HR staff": 5,
+                            "High skill tech staff": 6,
+                            "IT staff": 7,
+                            "Laborers": 8,
+                            "Low-skill Laborers": 9,
+                            "Managers": 10,
+                            "Medicine staff": 11,
+                            "Private service staff": 12,
+                            "Realty agents": 13,
+                            "Sales staff": 14,
+                            "Secretaries": 15,
+                            "Security staff": 16,
+                            "Waiters/barmen staff": 17
+                        },
+                        "WEEKDAY_APPR_PROCESS_START": {
+                            "FRIDAY": 0,
+                            "MONDAY": 1,
+                            "SATURDAY": 2,
+                            "SUNDAY": 3,
+                            "THURSDAY": 4,
+                            "TUESDAY": 5,
+                            "WEDNESDAY": 6
+                        },
+                        "ORGANIZATION_TYPE": {
+                            "Advertising": 0,
+                            "Agriculture": 1,
+                            "Bank": 2,
+                            "Business Entity Type 1": 3,
+                            "Business Entity Type 2": 4,
+                            "Business Entity Type 3": 5,
+                            "Cleaning": 6,
+                            "Construction": 7,
+                            "Culture": 8,
+                            "Electricity": 9,
+                            "Emergency": 10,
+                            "Government": 11,
+                            "Hotel": 12,
+                            "Housing": 13,
+                            "Industry: type 1": 14,
+                            "Industry: type 10": 15,
+                            "Industry: type 11": 16,
+                            "Industry: type 12": 17,
+                            "Industry: type 13": 18,
+                            "Industry: type 2": 19,
+                            "Industry: type 3": 20,
+                            "Industry: type 4": 21,
+                            "Industry: type 5": 22,
+                            "Industry: type 6": 23,
+                            "Industry: type 7": 24,
+                            "Industry: type 8": 25,
+                            "Industry: type 9": 26,
+                            "Insurance": 27,
+                            "Kindergarten": 28,
+                            "Legal Services": 29,
+                            "Medicine": 30,
+                            "Military": 31,
+                            "Mobile": 32,
+                            "Other": 33,
+                            "Police": 34,
+                            "Postal": 35,
+                            "Realtor": 36,
+                            "Religion": 37,
+                            "Restaurant": 38,
+                            "School": 39,
+                            "Security": 40,
+                            "Security Ministries": 41,
+                            "Self-employed": 42,
+                            "Services": 43,
+                            "Telecom": 44,
+                            "Trade: type 1": 45,
+                            "Trade: type 2": 46,
+                            "Trade: type 3": 47,
+                            "Trade: type 4": 48,
+                            "Trade: type 5": 49,
+                            "Trade: type 6": 50,
+                            "Trade: type 7": 51,
+                            "Transport: type 1": 52,
+                            "Transport: type 2": 53,
+                            "Transport: type 3": 54,
+                            "Transport: type 4": 55,
+                            "University": 56,
+                            "XNA": 57
+                        },
+                        "FONDKAPREMONT_MODE": {
+                            "not specified": 0,
+                            "org spec account": 1,
+                            "reg oper account": 2,
+                            "reg oper spec account": 3
+                        },
+                        "HOUSETYPE_MODE": {
+                            "block of flats": 0,
+                            "specific housing": 1,
+                            "terraced house": 2
+                        },
+                        "WALLSMATERIAL_MODE": {
+                            "Block": 0,
+                            "Mixed": 1,
+                            "Monolithic": 2,
+                            "Others": 3,
+                            "Panel": 4,
+                            "Stone, brick": 5,
+                            "Wooden": 6
+                        },
+                        "EMERGENCYSTATE_MODE": {
+                            "No": 0,
+                            "Yes": 1
+                        }
+                    },
+                    "columns": [
+                        "NAME_CONTRACT_TYPE",
+                        "CODE_GENDER",
+                        "FLAG_OWN_CAR",
+                        "FLAG_OWN_REALTY",
+                        "NAME_TYPE_SUITE",
+                        "NAME_INCOME_TYPE",
+                        "NAME_EDUCATION_TYPE",
+                        "NAME_FAMILY_STATUS",
+                        "NAME_HOUSING_TYPE",
+                        "OCCUPATION_TYPE",
+                        "WEEKDAY_APPR_PROCESS_START",
+                        "ORGANIZATION_TYPE",
+                        "FONDKAPREMONT_MODE",
+                        "HOUSETYPE_MODE",
+                        "WALLSMATERIAL_MODE",
+                        "EMERGENCYSTATE_MODE"
+                    ]
+                }
+            ],
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "NAME_CONTRACT_TYPE": [
+                        "categorical_to_int"
+                    ],
+                    "CODE_GENDER": [
+                        "categorical_to_int"
+                    ],
+                    "FLAG_OWN_CAR": [
+                        "categorical_to_int"
+                    ],
+                    "FLAG_OWN_REALTY": [
+                        "categorical_to_int"
+                    ],
+                    "AMT_ANNUITY": [
+                        "na_fill_median"
+                    ],
+                    "AMT_GOODS_PRICE": [
+                        "na_fill_median"
+                    ],
+                    "NAME_TYPE_SUITE": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "NAME_INCOME_TYPE": [
+                        "categorical_to_int"
+                    ],
+                    "NAME_EDUCATION_TYPE": [
+                        "categorical_to_int"
+                    ],
+                    "NAME_FAMILY_STATUS": [
+                        "categorical_to_int"
+                    ],
+                    "NAME_HOUSING_TYPE": [
+                        "categorical_to_int"
+                    ],
+                    "OWN_CAR_AGE": [
+                        "na_fill_median"
+                    ],
+                    "OCCUPATION_TYPE": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "CNT_FAM_MEMBERS": [
+                        "na_fill_median"
+                    ],
+                    "WEEKDAY_APPR_PROCESS_START": [
+                        "categorical_to_int"
+                    ],
+                    "ORGANIZATION_TYPE": [
+                        "categorical_to_int"
+                    ],
+                    "EXT_SOURCE_1": [
+                        "na_fill_median"
+                    ],
+                    "EXT_SOURCE_2": [
+                        "na_fill_median"
+                    ],
+                    "EXT_SOURCE_3": [
+                        "na_fill_median"
+                    ],
+                    "APARTMENTS_AVG": [
+                        "na_fill_median"
+                    ],
+                    "BASEMENTAREA_AVG": [
+                        "na_fill_median"
+                    ],
+                    "YEARS_BEGINEXPLUATATION_AVG": [
+                        "na_fill_median"
+                    ],
+                    "YEARS_BUILD_AVG": [
+                        "na_fill_median"
+                    ],
+                    "COMMONAREA_AVG": [
+                        "na_fill_median"
+                    ],
+                    "ELEVATORS_AVG": [
+                        "na_fill_median"
+                    ],
+                    "ENTRANCES_AVG": [
+                        "na_fill_median"
+                    ],
+                    "FLOORSMAX_AVG": [
+                        "na_fill_median"
+                    ],
+                    "FLOORSMIN_AVG": [
+                        "na_fill_median"
+                    ],
+                    "LANDAREA_AVG": [
+                        "na_fill_median"
+                    ],
+                    "LIVINGAPARTMENTS_AVG": [
+                        "na_fill_median"
+                    ],
+                    "LIVINGAREA_AVG": [
+                        "na_fill_median"
+                    ],
+                    "NONLIVINGAPARTMENTS_AVG": [
+                        "na_fill_median"
+                    ],
+                    "NONLIVINGAREA_AVG": [
+                        "na_fill_median"
+                    ],
+                    "APARTMENTS_MODE": [
+                        "na_fill_median"
+                    ],
+                    "BASEMENTAREA_MODE": [
+                        "na_fill_median"
+                    ],
+                    "YEARS_BEGINEXPLUATATION_MODE": [
+                        "na_fill_median"
+                    ],
+                    "YEARS_BUILD_MODE": [
+                        "na_fill_median"
+                    ],
+                    "COMMONAREA_MODE": [
+                        "na_fill_median"
+                    ],
+                    "ELEVATORS_MODE": [
+                        "na_fill_median"
+                    ],
+                    "ENTRANCES_MODE": [
+                        "na_fill_median"
+                    ],
+                    "FLOORSMAX_MODE": [
+                        "na_fill_median"
+                    ],
+                    "FLOORSMIN_MODE": [
+                        "na_fill_median"
+                    ],
+                    "LANDAREA_MODE": [
+                        "na_fill_median"
+                    ],
+                    "LIVINGAPARTMENTS_MODE": [
+                        "na_fill_median"
+                    ],
+                    "LIVINGAREA_MODE": [
+                        "na_fill_median"
+                    ],
+                    "NONLIVINGAPARTMENTS_MODE": [
+                        "na_fill_median"
+                    ],
+                    "NONLIVINGAREA_MODE": [
+                        "na_fill_median"
+                    ],
+                    "APARTMENTS_MEDI": [
+                        "na_fill_median"
+                    ],
+                    "BASEMENTAREA_MEDI": [
+                        "na_fill_median"
+                    ],
+                    "YEARS_BEGINEXPLUATATION_MEDI": [
+                        "na_fill_median"
+                    ],
+                    "YEARS_BUILD_MEDI": [
+                        "na_fill_median"
+                    ],
+                    "COMMONAREA_MEDI": [
+                        "na_fill_median"
+                    ],
+                    "ELEVATORS_MEDI": [
+                        "na_fill_median"
+                    ],
+                    "ENTRANCES_MEDI": [
+                        "na_fill_median"
+                    ],
+                    "FLOORSMAX_MEDI": [
+                        "na_fill_median"
+                    ],
+                    "FLOORSMIN_MEDI": [
+                        "na_fill_median"
+                    ],
+                    "LANDAREA_MEDI": [
+                        "na_fill_median"
+                    ],
+                    "LIVINGAPARTMENTS_MEDI": [
+                        "na_fill_median"
+                    ],
+                    "LIVINGAREA_MEDI": [
+                        "na_fill_median"
+                    ],
+                    "NONLIVINGAPARTMENTS_MEDI": [
+                        "na_fill_median"
+                    ],
+                    "NONLIVINGAREA_MEDI": [
+                        "na_fill_median"
+                    ],
+                    "FONDKAPREMONT_MODE": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "HOUSETYPE_MODE": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "TOTALAREA_MODE": [
+                        "na_fill_median"
+                    ],
+                    "WALLSMATERIAL_MODE": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "EMERGENCYSTATE_MODE": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "OBS_30_CNT_SOCIAL_CIRCLE": [
+                        "na_fill_median"
+                    ],
+                    "DEF_30_CNT_SOCIAL_CIRCLE": [
+                        "na_fill_median"
+                    ],
+                    "OBS_60_CNT_SOCIAL_CIRCLE": [
+                        "na_fill_median"
+                    ],
+                    "DEF_60_CNT_SOCIAL_CIRCLE": [
+                        "na_fill_median"
+                    ],
+                    "DAYS_LAST_PHONE_CHANGE": [
+                        "na_fill_median"
+                    ],
+                    "AMT_REQ_CREDIT_BUREAU_HOUR": [
+                        "na_fill_median"
+                    ],
+                    "AMT_REQ_CREDIT_BUREAU_DAY": [
+                        "na_fill_median"
+                    ],
+                    "AMT_REQ_CREDIT_BUREAU_WEEK": [
+                        "na_fill_median"
+                    ],
+                    "AMT_REQ_CREDIT_BUREAU_MON": [
+                        "na_fill_median"
+                    ],
+                    "AMT_REQ_CREDIT_BUREAU_QRT": [
+                        "na_fill_median"
+                    ],
+                    "AMT_REQ_CREDIT_BUREAU_YEAR": [
+                        "na_fill_median"
+                    ],
+                    "SOURCE": [
+                        "remove_column"
+                    ],
+                    "ALL_DAYS_CREDIT_min": [
+                        "na_fill_median"
+                    ],
+                    "ALL_DAYS_CREDIT_max": [
+                        "na_fill_median"
+                    ],
+                    "ALL_DAYS_CREDIT_mean": [
+                        "na_fill_median"
+                    ],
+                    "ALL_CREDIT_DAY_OVERDUE_max": [
+                        "na_fill_median"
+                    ],
+                    "ALL_CREDIT_DAY_OVERDUE_mean": [
+                        "na_fill_median"
+                    ],
+                    "ALL_CREDIT_DAY_OVERDUE_sum": [
+                        "na_fill_median"
+                    ],
+                    "ALL_DAYS_CREDIT_ENDDATE_min": [
+                        "na_fill_median"
+                    ],
+                    "ALL_DAYS_CREDIT_ENDDATE_max": [
+                        "na_fill_median"
+                    ],
+                    "ALL_DAYS_CREDIT_ENDDATE_mean": [
+                        "na_fill_median"
+                    ],
+                    "ALL_DAYS_ENDDATE_FACT_min": [
+                        "na_fill_median"
+                    ],
+                    "ALL_DAYS_ENDDATE_FACT_max": [
+                        "na_fill_median"
+                    ],
+                    "ALL_DAYS_ENDDATE_FACT_mean": [
+                        "na_fill_median"
+                    ],
+                    "ALL_AMT_CREDIT_MAX_OVERDUE_max": [
+                        "na_fill_median"
+                    ],
+                    "ALL_AMT_CREDIT_MAX_OVERDUE_mean": [
+                        "na_fill_median"
+                    ],
+                    "ALL_AMT_CREDIT_MAX_OVERDUE_sum": [
+                        "na_fill_median"
+                    ],
+                    "ALL_CNT_CREDIT_PROLONG_sum": [
+                        "na_fill_median"
+                    ],
+                    "ALL_CNT_CREDIT_PROLONG_mean": [
+                        "na_fill_median"
+                    ],
+                    "ALL_AMT_CREDIT_SUM_sum": [
+                        "na_fill_median"
+                    ],
+                    "ALL_AMT_CREDIT_SUM_mean": [
+                        "na_fill_median"
+                    ],
+                    "ALL_AMT_CREDIT_SUM_max": [
+                        "na_fill_median"
+                    ],
+                    "ALL_AMT_CREDIT_SUM_DEBT_sum": [
+                        "na_fill_median"
+                    ],
+                    "ALL_AMT_CREDIT_SUM_DEBT_mean": [
+                        "na_fill_median"
+                    ],
+                    "ALL_AMT_CREDIT_SUM_LIMIT_sum": [
+                        "na_fill_median"
+                    ],
+                    "ALL_AMT_CREDIT_SUM_LIMIT_mean": [
+                        "na_fill_median"
+                    ],
+                    "ALL_AMT_CREDIT_SUM_OVERDUE_sum": [
+                        "na_fill_median"
+                    ],
+                    "ALL_AMT_CREDIT_SUM_OVERDUE_mean": [
+                        "na_fill_median"
+                    ],
+                    "ALL_AMT_CREDIT_SUM_OVERDUE_max": [
+                        "na_fill_median"
+                    ],
+                    "ALL_DAYS_CREDIT_UPDATE_min": [
+                        "na_fill_median"
+                    ],
+                    "ALL_DAYS_CREDIT_UPDATE_max": [
+                        "na_fill_median"
+                    ],
+                    "ALL_DAYS_CREDIT_UPDATE_mean": [
+                        "na_fill_median"
+                    ],
+                    "ALL_AMT_ANNUITY_mean": [
+                        "na_fill_median"
+                    ],
+                    "ALL_AMT_ANNUITY_sum": [
+                        "na_fill_median"
+                    ],
+                    "ALL_AMT_ANNUITY_max": [
+                        "na_fill_median"
+                    ],
+                    "ALL_BB_MONTHS_BALANCE_min_min": [
+                        "na_fill_median"
+                    ],
+                    "ALL_BB_MONTHS_BALANCE_max_max": [
+                        "na_fill_median"
+                    ],
+                    "ALL_BB_MONTHS_BALANCE_mean_mean": [
+                        "na_fill_median"
+                    ],
+                    "ALL_BB_STATUS_0_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "ALL_BB_STATUS_1_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "ALL_BB_STATUS_2_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "ALL_BB_STATUS_3_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "ALL_BB_STATUS_4_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "ALL_BB_STATUS_5_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "ALL_BB_STATUS_C_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "ALL_BB_STATUS_X_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_DAYS_CREDIT_min": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_DAYS_CREDIT_max": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_DAYS_CREDIT_mean": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_CREDIT_DAY_OVERDUE_max": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_CREDIT_DAY_OVERDUE_mean": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_CREDIT_DAY_OVERDUE_sum": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_DAYS_CREDIT_ENDDATE_min": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_DAYS_CREDIT_ENDDATE_max": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_DAYS_CREDIT_ENDDATE_mean": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_DAYS_ENDDATE_FACT_min": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_DAYS_ENDDATE_FACT_max": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_DAYS_ENDDATE_FACT_mean": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_AMT_CREDIT_MAX_OVERDUE_max": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_AMT_CREDIT_MAX_OVERDUE_mean": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_AMT_CREDIT_MAX_OVERDUE_sum": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_CNT_CREDIT_PROLONG_sum": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_CNT_CREDIT_PROLONG_mean": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_AMT_CREDIT_SUM_sum": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_AMT_CREDIT_SUM_mean": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_AMT_CREDIT_SUM_max": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_AMT_CREDIT_SUM_DEBT_sum": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_AMT_CREDIT_SUM_DEBT_mean": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_AMT_CREDIT_SUM_LIMIT_sum": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_AMT_CREDIT_SUM_LIMIT_mean": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_AMT_CREDIT_SUM_OVERDUE_sum": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_AMT_CREDIT_SUM_OVERDUE_mean": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_AMT_CREDIT_SUM_OVERDUE_max": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_DAYS_CREDIT_UPDATE_min": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_DAYS_CREDIT_UPDATE_max": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_DAYS_CREDIT_UPDATE_mean": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_AMT_ANNUITY_mean": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_AMT_ANNUITY_sum": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_AMT_ANNUITY_max": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_BB_MONTHS_BALANCE_min_min": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_BB_MONTHS_BALANCE_max_max": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_BB_MONTHS_BALANCE_mean_mean": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_BB_STATUS_0_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_BB_STATUS_1_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_BB_STATUS_2_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_BB_STATUS_3_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_BB_STATUS_4_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_BB_STATUS_5_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_BB_STATUS_C_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_BB_STATUS_X_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_DAYS_CREDIT_min": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_DAYS_CREDIT_max": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_DAYS_CREDIT_mean": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_CREDIT_DAY_OVERDUE_max": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_CREDIT_DAY_OVERDUE_mean": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_CREDIT_DAY_OVERDUE_sum": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_DAYS_CREDIT_ENDDATE_min": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_DAYS_CREDIT_ENDDATE_max": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_DAYS_CREDIT_ENDDATE_mean": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_DAYS_ENDDATE_FACT_min": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_DAYS_ENDDATE_FACT_max": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_DAYS_ENDDATE_FACT_mean": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_AMT_CREDIT_MAX_OVERDUE_max": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_AMT_CREDIT_MAX_OVERDUE_mean": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_AMT_CREDIT_MAX_OVERDUE_sum": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_CNT_CREDIT_PROLONG_sum": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_CNT_CREDIT_PROLONG_mean": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_AMT_CREDIT_SUM_sum": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_AMT_CREDIT_SUM_mean": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_AMT_CREDIT_SUM_max": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_AMT_CREDIT_SUM_DEBT_sum": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_AMT_CREDIT_SUM_DEBT_mean": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_AMT_CREDIT_SUM_LIMIT_sum": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_AMT_CREDIT_SUM_LIMIT_mean": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_AMT_CREDIT_SUM_OVERDUE_sum": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_AMT_CREDIT_SUM_OVERDUE_mean": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_AMT_CREDIT_SUM_OVERDUE_max": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_DAYS_CREDIT_UPDATE_min": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_DAYS_CREDIT_UPDATE_max": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_DAYS_CREDIT_UPDATE_mean": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_AMT_ANNUITY_mean": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_AMT_ANNUITY_sum": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_AMT_ANNUITY_max": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_BB_MONTHS_BALANCE_min_min": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_BB_MONTHS_BALANCE_max_max": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_BB_MONTHS_BALANCE_mean_mean": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_BB_STATUS_0_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_BB_STATUS_1_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_BB_STATUS_2_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_BB_STATUS_3_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_BB_STATUS_4_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_BB_STATUS_5_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_BB_STATUS_C_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_BB_STATUS_X_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_DAYS_CREDIT_min": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_DAYS_CREDIT_max": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_DAYS_CREDIT_mean": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_CREDIT_DAY_OVERDUE_max": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_CREDIT_DAY_OVERDUE_mean": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_CREDIT_DAY_OVERDUE_sum": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_DAYS_CREDIT_ENDDATE_min": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_DAYS_CREDIT_ENDDATE_max": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_DAYS_CREDIT_ENDDATE_mean": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_DAYS_ENDDATE_FACT_min": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_DAYS_ENDDATE_FACT_max": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_DAYS_ENDDATE_FACT_mean": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_AMT_CREDIT_MAX_OVERDUE_max": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_AMT_CREDIT_MAX_OVERDUE_mean": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_AMT_CREDIT_MAX_OVERDUE_sum": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_CNT_CREDIT_PROLONG_sum": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_CNT_CREDIT_PROLONG_mean": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_AMT_CREDIT_SUM_sum": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_AMT_CREDIT_SUM_mean": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_AMT_CREDIT_SUM_max": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_AMT_CREDIT_SUM_DEBT_sum": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_AMT_CREDIT_SUM_DEBT_mean": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_AMT_CREDIT_SUM_LIMIT_sum": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_AMT_CREDIT_SUM_LIMIT_mean": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_AMT_CREDIT_SUM_OVERDUE_sum": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_AMT_CREDIT_SUM_OVERDUE_mean": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_AMT_CREDIT_SUM_OVERDUE_max": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_DAYS_CREDIT_UPDATE_min": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_DAYS_CREDIT_UPDATE_max": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_DAYS_CREDIT_UPDATE_mean": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_AMT_ANNUITY_mean": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_AMT_ANNUITY_sum": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_AMT_ANNUITY_max": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_BB_MONTHS_BALANCE_min_min": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_BB_MONTHS_BALANCE_max_max": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_BB_MONTHS_BALANCE_mean_mean": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_BB_STATUS_0_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_BB_STATUS_1_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_BB_STATUS_2_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_BB_STATUS_3_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_BB_STATUS_4_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_BB_STATUS_5_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_BB_STATUS_C_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_BB_STATUS_X_sum_sum": [
+                        "na_fill_median"
+                    ],
+                    "ALL_CREDIT_TYPE_Another type of loan": [
+                        "na_fill_median"
+                    ],
+                    "ALL_CREDIT_TYPE_Car loan": [
+                        "na_fill_median"
+                    ],
+                    "ALL_CREDIT_TYPE_Cash loan (non-earmarked)": [
+                        "na_fill_median"
+                    ],
+                    "ALL_CREDIT_TYPE_Consumer credit": [
+                        "na_fill_median"
+                    ],
+                    "ALL_CREDIT_TYPE_Credit card": [
+                        "na_fill_median"
+                    ],
+                    "ALL_CREDIT_TYPE_Interbank credit": [
+                        "na_fill_median"
+                    ],
+                    "ALL_CREDIT_TYPE_Loan for business development": [
+                        "na_fill_median"
+                    ],
+                    "ALL_CREDIT_TYPE_Loan for purchase of shares (margin lending)": [
+                        "na_fill_median"
+                    ],
+                    "ALL_CREDIT_TYPE_Loan for the purchase of equipment": [
+                        "na_fill_median"
+                    ],
+                    "ALL_CREDIT_TYPE_Loan for working capital replenishment": [
+                        "na_fill_median"
+                    ],
+                    "ALL_CREDIT_TYPE_Microloan": [
+                        "na_fill_median"
+                    ],
+                    "ALL_CREDIT_TYPE_Mobile operator loan": [
+                        "na_fill_median"
+                    ],
+                    "ALL_CREDIT_TYPE_Mortgage": [
+                        "na_fill_median"
+                    ],
+                    "ALL_CREDIT_TYPE_Real estate loan": [
+                        "na_fill_median"
+                    ],
+                    "ALL_CREDIT_TYPE_Unknown type of loan": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_CREDIT_TYPE_Another type of loan": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_CREDIT_TYPE_Car loan": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_CREDIT_TYPE_Cash loan (non-earmarked)": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_CREDIT_TYPE_Consumer credit": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_CREDIT_TYPE_Credit card": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_CREDIT_TYPE_Loan for business development": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_CREDIT_TYPE_Loan for purchase of shares (margin lending)": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_CREDIT_TYPE_Loan for the purchase of equipment": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_CREDIT_TYPE_Loan for working capital replenishment": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_CREDIT_TYPE_Microloan": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_CREDIT_TYPE_Mobile operator loan": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_CREDIT_TYPE_Mortgage": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_CREDIT_TYPE_Real estate loan": [
+                        "na_fill_median"
+                    ],
+                    "ACTIVE_CREDIT_TYPE_Unknown type of loan": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_CREDIT_TYPE_Another type of loan": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_CREDIT_TYPE_Car loan": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_CREDIT_TYPE_Cash loan (non-earmarked)": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_CREDIT_TYPE_Consumer credit": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_CREDIT_TYPE_Credit card": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_CREDIT_TYPE_Interbank credit": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_CREDIT_TYPE_Loan for business development": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_CREDIT_TYPE_Loan for purchase of shares (margin lending)": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_CREDIT_TYPE_Loan for the purchase of equipment": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_CREDIT_TYPE_Loan for working capital replenishment": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_CREDIT_TYPE_Microloan": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_CREDIT_TYPE_Mortgage": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_CREDIT_TYPE_Real estate loan": [
+                        "na_fill_median"
+                    ],
+                    "CLOSED_CREDIT_TYPE_Unknown type of loan": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_CREDIT_TYPE_Another type of loan": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_CREDIT_TYPE_Car loan": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_CREDIT_TYPE_Cash loan (non-earmarked)": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_CREDIT_TYPE_Consumer credit": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_CREDIT_TYPE_Credit card": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_CREDIT_TYPE_Loan for business development": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_CREDIT_TYPE_Loan for working capital replenishment": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_CREDIT_TYPE_Microloan": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_CREDIT_TYPE_Mortgage": [
+                        "na_fill_median"
+                    ],
+                    "SOLD_CREDIT_TYPE_Real estate loan": [
+                        "na_fill_median"
+                    ],
+                    "CREDIT_ACTIVE_COUNT_ACTIVE": [
+                        "na_fill_median"
+                    ],
+                    "CREDIT_ACTIVE_COUNT_BAD DEBT": [
+                        "na_fill_median"
+                    ],
+                    "CREDIT_ACTIVE_COUNT_CLOSED": [
+                        "na_fill_median"
+                    ],
+                    "CREDIT_ACTIVE_COUNT_SOLD": [
+                        "na_fill_median"
+                    ],
+                    "DEBT_RATIO": [
+                        "na_fill_median"
+                    ],
+                    "OVERDUE_RATIO": [
+                        "na_fill_median"
+                    ],
+                    "BUREAU_LOAN_COUNT": [
+                        "na_fill_median"
+                    ],
+                    "PREV_AMT_ANNUITY_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_AMT_ANNUITY_MAX": [
+                        "na_fill_median"
+                    ],
+                    "PREV_AMT_ANNUITY_SUM": [
+                        "na_fill_median"
+                    ],
+                    "PREV_AMT_APPLICATION_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_AMT_APPLICATION_MAX": [
+                        "na_fill_median"
+                    ],
+                    "PREV_AMT_APPLICATION_SUM": [
+                        "na_fill_median"
+                    ],
+                    "PREV_AMT_CREDIT_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_AMT_CREDIT_MAX": [
+                        "na_fill_median"
+                    ],
+                    "PREV_AMT_CREDIT_SUM": [
+                        "na_fill_median"
+                    ],
+                    "PREV_AMT_DOWN_PAYMENT_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_AMT_DOWN_PAYMENT_MAX": [
+                        "na_fill_median"
+                    ],
+                    "PREV_AMT_DOWN_PAYMENT_SUM": [
+                        "na_fill_median"
+                    ],
+                    "PREV_AMT_GOODS_PRICE_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_AMT_GOODS_PRICE_MAX": [
+                        "na_fill_median"
+                    ],
+                    "PREV_AMT_GOODS_PRICE_SUM": [
+                        "na_fill_median"
+                    ],
+                    "PREV_HOUR_APPR_PROCESS_START_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_HOUR_APPR_PROCESS_START_MAX": [
+                        "na_fill_median"
+                    ],
+                    "PREV_HOUR_APPR_PROCESS_START_MIN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_RATE_DOWN_PAYMENT_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_RATE_DOWN_PAYMENT_MAX": [
+                        "na_fill_median"
+                    ],
+                    "PREV_RATE_DOWN_PAYMENT_MIN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_DAYS_DECISION_MIN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_DAYS_DECISION_MAX": [
+                        "na_fill_median"
+                    ],
+                    "PREV_DAYS_DECISION_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_MONTHS_BALANCE_MIN_MIN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_MONTHS_BALANCE_MAX_MAX": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_MONTHS_BALANCE_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_AMT_BALANCE_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_AMT_BALANCE_MAX_MAX": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_AMT_BALANCE_SUM_SUM": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_AMT_CREDIT_LIMIT_ACTUAL_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_AMT_CREDIT_LIMIT_ACTUAL_MAX_MAX": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_AMT_DRAWINGS_ATM_CURRENT_SUM_SUM": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_AMT_DRAWINGS_ATM_CURRENT_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_AMT_DRAWINGS_CURRENT_SUM_SUM": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_AMT_DRAWINGS_CURRENT_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_AMT_DRAWINGS_POS_CURRENT_SUM_SUM": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_AMT_DRAWINGS_POS_CURRENT_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_AMT_PAYMENT_CURRENT_SUM_SUM": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_AMT_PAYMENT_CURRENT_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_AMT_PAYMENT_TOTAL_CURRENT_SUM_SUM": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_AMT_PAYMENT_TOTAL_CURRENT_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_AMT_RECEIVABLE_PRINCIPAL_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_AMT_RECEIVABLE_PRINCIPAL_MAX_MAX": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_AMT_RECIVABLE_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_AMT_RECIVABLE_MAX_MAX": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_AMT_TOTAL_RECEIVABLE_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_AMT_TOTAL_RECEIVABLE_MAX_MAX": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_CNT_DRAWINGS_CURRENT_SUM_SUM": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_CNT_DRAWINGS_CURRENT_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_CNT_DRAWINGS_ATM_CURRENT_SUM_SUM": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_CNT_DRAWINGS_ATM_CURRENT_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_CNT_DRAWINGS_POS_CURRENT_SUM_SUM": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_CNT_DRAWINGS_POS_CURRENT_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_SK_DPD_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_SK_DPD_MAX_MAX": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_SK_DPD_SUM_SUM": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_SK_DPD_DEF_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_SK_DPD_DEF_MAX_MAX": [
+                        "na_fill_median"
+                    ],
+                    "PREV_CCB_SK_DPD_DEF_SUM_SUM": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_NUM_INSTALMENT_VERSION_NUNIQUE_NUNIQUE": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_NUM_INSTALMENT_NUMBER_MAX_MAX": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_NUM_INSTALMENT_NUMBER_COUNT_COUNT": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_AMT_INSTALMENT_SUM_SUM": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_AMT_INSTALMENT_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_AMT_INSTALMENT_MAX_MAX": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_AMT_PAYMENT_SUM_SUM": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_AMT_PAYMENT_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_AMT_PAYMENT_MAX_MAX": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_DAYS_INSTALMENT_MIN_MIN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_DAYS_INSTALMENT_MAX_MAX": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_DAYS_INSTALMENT_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_DAYS_ENTRY_PAYMENT_MIN_MIN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_DAYS_ENTRY_PAYMENT_MAX_MAX": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_DAYS_ENTRY_PAYMENT_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_PAYMENT_PERC_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_PAYMENT_PERC_STD_STD": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_PAYMENT_DIFF_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_PAYMENT_DIFF_STD_STD": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_PAYMENT_DIFF_MIN_MIN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_PAYMENT_DIFF_MAX_MAX": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_DPD_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_DPD_SUM_SUM": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_DPD_MAX_MAX": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_EARLY_PAYMENT_MEAN_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_EARLY_PAYMENT_SUM_SUM": [
+                        "na_fill_median"
+                    ],
+                    "PREV_INST_EARLY_REPAY_LOAN_MAX_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "NAME_CONTRACT_STATUS_Approved": [
+                        "na_fill_median"
+                    ],
+                    "NAME_CONTRACT_STATUS_Canceled": [
+                        "na_fill_median"
+                    ],
+                    "NAME_CONTRACT_STATUS_Refused": [
+                        "na_fill_median"
+                    ],
+                    "NAME_CONTRACT_STATUS_Unused offer": [
+                        "na_fill_median"
+                    ],
+                    "NAME_PAYMENT_TYPE_Cash through the bank": [
+                        "na_fill_median"
+                    ],
+                    "NAME_PAYMENT_TYPE_Cashless from the account of the employer": [
+                        "na_fill_median"
+                    ],
+                    "NAME_PAYMENT_TYPE_Non-cash from your account": [
+                        "na_fill_median"
+                    ],
+                    "NAME_PAYMENT_TYPE_XNA": [
+                        "na_fill_median"
+                    ],
+                    "NAME_CLIENT_TYPE_New": [
+                        "na_fill_median"
+                    ],
+                    "NAME_CLIENT_TYPE_Refreshed": [
+                        "na_fill_median"
+                    ],
+                    "NAME_CLIENT_TYPE_Repeater": [
+                        "na_fill_median"
+                    ],
+                    "NAME_CLIENT_TYPE_XNA": [
+                        "na_fill_median"
+                    ],
+                    "NAME_CONTRACT_TYPE_Cash loans": [
+                        "na_fill_median"
+                    ],
+                    "NAME_CONTRACT_TYPE_Consumer loans": [
+                        "na_fill_median"
+                    ],
+                    "NAME_CONTRACT_TYPE_Revolving loans": [
+                        "na_fill_median"
+                    ],
+                    "NAME_CONTRACT_TYPE_XNA": [
+                        "na_fill_median"
+                    ],
+                    "WEEKDAY_APPR_PROCESS_START_FRIDAY": [
+                        "na_fill_median"
+                    ],
+                    "WEEKDAY_APPR_PROCESS_START_MONDAY": [
+                        "na_fill_median"
+                    ],
+                    "WEEKDAY_APPR_PROCESS_START_SATURDAY": [
+                        "na_fill_median"
+                    ],
+                    "WEEKDAY_APPR_PROCESS_START_SUNDAY": [
+                        "na_fill_median"
+                    ],
+                    "WEEKDAY_APPR_PROCESS_START_THURSDAY": [
+                        "na_fill_median"
+                    ],
+                    "WEEKDAY_APPR_PROCESS_START_TUESDAY": [
+                        "na_fill_median"
+                    ],
+                    "WEEKDAY_APPR_PROCESS_START_WEDNESDAY": [
+                        "na_fill_median"
+                    ],
+                    "POS_MONTHS_BALANCE_MIN": [
+                        "na_fill_median"
+                    ],
+                    "POS_MONTHS_BALANCE_MAX": [
+                        "na_fill_median"
+                    ],
+                    "POS_MONTHS_BALANCE_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "POS_SK_DPD_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "POS_SK_DPD_MAX": [
+                        "na_fill_median"
+                    ],
+                    "POS_SK_DPD_SUM": [
+                        "na_fill_median"
+                    ],
+                    "POS_SK_DPD_DEF_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "POS_SK_DPD_DEF_MAX": [
+                        "na_fill_median"
+                    ],
+                    "POS_SK_DPD_DEF_SUM": [
+                        "na_fill_median"
+                    ],
+                    "POS_CNT_INSTALMENT_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "POS_CNT_INSTALMENT_MAX": [
+                        "na_fill_median"
+                    ],
+                    "POS_CNT_INSTALMENT_FUTURE_MEAN": [
+                        "na_fill_median"
+                    ],
+                    "POS_CNT_INSTALMENT_FUTURE_MAX": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "3.0.3",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "20dec894-d4ca-4417-9d60-427ad67ac3ee",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "seed": 43,
+                "objective": "binary:logistic",
+                "eta": 0.1,
+                "max_depth": 7,
+                "min_child_weight": 5,
+                "subsample": 1.0,
+                "colsample_bytree": 0.5,
+                "eval_metric": "auc",
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "NAME_CONTRACT_TYPE": [
+                    "categorical_to_int"
+                ],
+                "CODE_GENDER": [
+                    "categorical_to_int"
+                ],
+                "FLAG_OWN_CAR": [
+                    "categorical_to_int"
+                ],
+                "FLAG_OWN_REALTY": [
+                    "categorical_to_int"
+                ],
+                "AMT_ANNUITY": [
+                    "na_fill_median"
+                ],
+                "AMT_GOODS_PRICE": [
+                    "na_fill_median"
+                ],
+                "NAME_TYPE_SUITE": [
+                    "na_fill_median",
+                    "categorical_to_int"
+                ],
+                "NAME_INCOME_TYPE": [
+                    "categorical_to_int"
+                ],
+                "NAME_EDUCATION_TYPE": [
+                    "categorical_to_int"
+                ],
+                "NAME_FAMILY_STATUS": [
+                    "categorical_to_int"
+                ],
+                "NAME_HOUSING_TYPE": [
+                    "categorical_to_int"
+                ],
+                "OWN_CAR_AGE": [
+                    "na_fill_median"
+                ],
+                "OCCUPATION_TYPE": [
+                    "na_fill_median",
+                    "categorical_to_int"
+                ],
+                "CNT_FAM_MEMBERS": [
+                    "na_fill_median"
+                ],
+                "WEEKDAY_APPR_PROCESS_START": [
+                    "categorical_to_int"
+                ],
+                "ORGANIZATION_TYPE": [
+                    "categorical_to_int"
+                ],
+                "EXT_SOURCE_1": [
+                    "na_fill_median"
+                ],
+                "EXT_SOURCE_2": [
+                    "na_fill_median"
+                ],
+                "EXT_SOURCE_3": [
+                    "na_fill_median"
+                ],
+                "APARTMENTS_AVG": [
+                    "na_fill_median"
+                ],
+                "BASEMENTAREA_AVG": [
+                    "na_fill_median"
+                ],
+                "YEARS_BEGINEXPLUATATION_AVG": [
+                    "na_fill_median"
+                ],
+                "YEARS_BUILD_AVG": [
+                    "na_fill_median"
+                ],
+                "COMMONAREA_AVG": [
+                    "na_fill_median"
+                ],
+                "ELEVATORS_AVG": [
+                    "na_fill_median"
+                ],
+                "ENTRANCES_AVG": [
+                    "na_fill_median"
+                ],
+                "FLOORSMAX_AVG": [
+                    "na_fill_median"
+                ],
+                "FLOORSMIN_AVG": [
+                    "na_fill_median"
+                ],
+                "LANDAREA_AVG": [
+                    "na_fill_median"
+                ],
+                "LIVINGAPARTMENTS_AVG": [
+                    "na_fill_median"
+                ],
+                "LIVINGAREA_AVG": [
+                    "na_fill_median"
+                ],
+                "NONLIVINGAPARTMENTS_AVG": [
+                    "na_fill_median"
+                ],
+                "NONLIVINGAREA_AVG": [
+                    "na_fill_median"
+                ],
+                "APARTMENTS_MODE": [
+                    "na_fill_median"
+                ],
+                "BASEMENTAREA_MODE": [
+                    "na_fill_median"
+                ],
+                "YEARS_BEGINEXPLUATATION_MODE": [
+                    "na_fill_median"
+                ],
+                "YEARS_BUILD_MODE": [
+                    "na_fill_median"
+                ],
+                "COMMONAREA_MODE": [
+                    "na_fill_median"
+                ],
+                "ELEVATORS_MODE": [
+                    "na_fill_median"
+                ],
+                "ENTRANCES_MODE": [
+                    "na_fill_median"
+                ],
+                "FLOORSMAX_MODE": [
+                    "na_fill_median"
+                ],
+                "FLOORSMIN_MODE": [
+                    "na_fill_median"
+                ],
+                "LANDAREA_MODE": [
+                    "na_fill_median"
+                ],
+                "LIVINGAPARTMENTS_MODE": [
+                    "na_fill_median"
+                ],
+                "LIVINGAREA_MODE": [
+                    "na_fill_median"
+                ],
+                "NONLIVINGAPARTMENTS_MODE": [
+                    "na_fill_median"
+                ],
+                "NONLIVINGAREA_MODE": [
+                    "na_fill_median"
+                ],
+                "APARTMENTS_MEDI": [
+                    "na_fill_median"
+                ],
+                "BASEMENTAREA_MEDI": [
+                    "na_fill_median"
+                ],
+                "YEARS_BEGINEXPLUATATION_MEDI": [
+                    "na_fill_median"
+                ],
+                "YEARS_BUILD_MEDI": [
+                    "na_fill_median"
+                ],
+                "COMMONAREA_MEDI": [
+                    "na_fill_median"
+                ],
+                "ELEVATORS_MEDI": [
+                    "na_fill_median"
+                ],
+                "ENTRANCES_MEDI": [
+                    "na_fill_median"
+                ],
+                "FLOORSMAX_MEDI": [
+                    "na_fill_median"
+                ],
+                "FLOORSMIN_MEDI": [
+                    "na_fill_median"
+                ],
+                "LANDAREA_MEDI": [
+                    "na_fill_median"
+                ],
+                "LIVINGAPARTMENTS_MEDI": [
+                    "na_fill_median"
+                ],
+                "LIVINGAREA_MEDI": [
+                    "na_fill_median"
+                ],
+                "NONLIVINGAPARTMENTS_MEDI": [
+                    "na_fill_median"
+                ],
+                "NONLIVINGAREA_MEDI": [
+                    "na_fill_median"
+                ],
+                "FONDKAPREMONT_MODE": [
+                    "na_fill_median",
+                    "categorical_to_int"
+                ],
+                "HOUSETYPE_MODE": [
+                    "na_fill_median",
+                    "categorical_to_int"
+                ],
+                "TOTALAREA_MODE": [
+                    "na_fill_median"
+                ],
+                "WALLSMATERIAL_MODE": [
+                    "na_fill_median",
+                    "categorical_to_int"
+                ],
+                "EMERGENCYSTATE_MODE": [
+                    "na_fill_median",
+                    "categorical_to_int"
+                ],
+                "OBS_30_CNT_SOCIAL_CIRCLE": [
+                    "na_fill_median"
+                ],
+                "DEF_30_CNT_SOCIAL_CIRCLE": [
+                    "na_fill_median"
+                ],
+                "OBS_60_CNT_SOCIAL_CIRCLE": [
+                    "na_fill_median"
+                ],
+                "DEF_60_CNT_SOCIAL_CIRCLE": [
+                    "na_fill_median"
+                ],
+                "DAYS_LAST_PHONE_CHANGE": [
+                    "na_fill_median"
+                ],
+                "AMT_REQ_CREDIT_BUREAU_HOUR": [
+                    "na_fill_median"
+                ],
+                "AMT_REQ_CREDIT_BUREAU_DAY": [
+                    "na_fill_median"
+                ],
+                "AMT_REQ_CREDIT_BUREAU_WEEK": [
+                    "na_fill_median"
+                ],
+                "AMT_REQ_CREDIT_BUREAU_MON": [
+                    "na_fill_median"
+                ],
+                "AMT_REQ_CREDIT_BUREAU_QRT": [
+                    "na_fill_median"
+                ],
+                "AMT_REQ_CREDIT_BUREAU_YEAR": [
+                    "na_fill_median"
+                ],
+                "SOURCE": [
+                    "remove_column"
+                ],
+                "ALL_DAYS_CREDIT_min": [
+                    "na_fill_median"
+                ],
+                "ALL_DAYS_CREDIT_max": [
+                    "na_fill_median"
+                ],
+                "ALL_DAYS_CREDIT_mean": [
+                    "na_fill_median"
+                ],
+                "ALL_CREDIT_DAY_OVERDUE_max": [
+                    "na_fill_median"
+                ],
+                "ALL_CREDIT_DAY_OVERDUE_mean": [
+                    "na_fill_median"
+                ],
+                "ALL_CREDIT_DAY_OVERDUE_sum": [
+                    "na_fill_median"
+                ],
+                "ALL_DAYS_CREDIT_ENDDATE_min": [
+                    "na_fill_median"
+                ],
+                "ALL_DAYS_CREDIT_ENDDATE_max": [
+                    "na_fill_median"
+                ],
+                "ALL_DAYS_CREDIT_ENDDATE_mean": [
+                    "na_fill_median"
+                ],
+                "ALL_DAYS_ENDDATE_FACT_min": [
+                    "na_fill_median"
+                ],
+                "ALL_DAYS_ENDDATE_FACT_max": [
+                    "na_fill_median"
+                ],
+                "ALL_DAYS_ENDDATE_FACT_mean": [
+                    "na_fill_median"
+                ],
+                "ALL_AMT_CREDIT_MAX_OVERDUE_max": [
+                    "na_fill_median"
+                ],
+                "ALL_AMT_CREDIT_MAX_OVERDUE_mean": [
+                    "na_fill_median"
+                ],
+                "ALL_AMT_CREDIT_MAX_OVERDUE_sum": [
+                    "na_fill_median"
+                ],
+                "ALL_CNT_CREDIT_PROLONG_sum": [
+                    "na_fill_median"
+                ],
+                "ALL_CNT_CREDIT_PROLONG_mean": [
+                    "na_fill_median"
+                ],
+                "ALL_AMT_CREDIT_SUM_sum": [
+                    "na_fill_median"
+                ],
+                "ALL_AMT_CREDIT_SUM_mean": [
+                    "na_fill_median"
+                ],
+                "ALL_AMT_CREDIT_SUM_max": [
+                    "na_fill_median"
+                ],
+                "ALL_AMT_CREDIT_SUM_DEBT_sum": [
+                    "na_fill_median"
+                ],
+                "ALL_AMT_CREDIT_SUM_DEBT_mean": [
+                    "na_fill_median"
+                ],
+                "ALL_AMT_CREDIT_SUM_LIMIT_sum": [
+                    "na_fill_median"
+                ],
+                "ALL_AMT_CREDIT_SUM_LIMIT_mean": [
+                    "na_fill_median"
+                ],
+                "ALL_AMT_CREDIT_SUM_OVERDUE_sum": [
+                    "na_fill_median"
+                ],
+                "ALL_AMT_CREDIT_SUM_OVERDUE_mean": [
+                    "na_fill_median"
+                ],
+                "ALL_AMT_CREDIT_SUM_OVERDUE_max": [
+                    "na_fill_median"
+                ],
+                "ALL_DAYS_CREDIT_UPDATE_min": [
+                    "na_fill_median"
+                ],
+                "ALL_DAYS_CREDIT_UPDATE_max": [
+                    "na_fill_median"
+                ],
+                "ALL_DAYS_CREDIT_UPDATE_mean": [
+                    "na_fill_median"
+                ],
+                "ALL_AMT_ANNUITY_mean": [
+                    "na_fill_median"
+                ],
+                "ALL_AMT_ANNUITY_sum": [
+                    "na_fill_median"
+                ],
+                "ALL_AMT_ANNUITY_max": [
+                    "na_fill_median"
+                ],
+                "ALL_BB_MONTHS_BALANCE_min_min": [
+                    "na_fill_median"
+                ],
+                "ALL_BB_MONTHS_BALANCE_max_max": [
+                    "na_fill_median"
+                ],
+                "ALL_BB_MONTHS_BALANCE_mean_mean": [
+                    "na_fill_median"
+                ],
+                "ALL_BB_STATUS_0_sum_sum": [
+                    "na_fill_median"
+                ],
+                "ALL_BB_STATUS_1_sum_sum": [
+                    "na_fill_median"
+                ],
+                "ALL_BB_STATUS_2_sum_sum": [
+                    "na_fill_median"
+                ],
+                "ALL_BB_STATUS_3_sum_sum": [
+                    "na_fill_median"
+                ],
+                "ALL_BB_STATUS_4_sum_sum": [
+                    "na_fill_median"
+                ],
+                "ALL_BB_STATUS_5_sum_sum": [
+                    "na_fill_median"
+                ],
+                "ALL_BB_STATUS_C_sum_sum": [
+                    "na_fill_median"
+                ],
+                "ALL_BB_STATUS_X_sum_sum": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_DAYS_CREDIT_min": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_DAYS_CREDIT_max": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_DAYS_CREDIT_mean": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_CREDIT_DAY_OVERDUE_max": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_CREDIT_DAY_OVERDUE_mean": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_CREDIT_DAY_OVERDUE_sum": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_DAYS_CREDIT_ENDDATE_min": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_DAYS_CREDIT_ENDDATE_max": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_DAYS_CREDIT_ENDDATE_mean": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_DAYS_ENDDATE_FACT_min": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_DAYS_ENDDATE_FACT_max": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_DAYS_ENDDATE_FACT_mean": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_AMT_CREDIT_MAX_OVERDUE_max": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_AMT_CREDIT_MAX_OVERDUE_mean": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_AMT_CREDIT_MAX_OVERDUE_sum": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_CNT_CREDIT_PROLONG_sum": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_CNT_CREDIT_PROLONG_mean": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_AMT_CREDIT_SUM_sum": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_AMT_CREDIT_SUM_mean": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_AMT_CREDIT_SUM_max": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_AMT_CREDIT_SUM_DEBT_sum": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_AMT_CREDIT_SUM_DEBT_mean": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_AMT_CREDIT_SUM_LIMIT_sum": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_AMT_CREDIT_SUM_LIMIT_mean": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_AMT_CREDIT_SUM_OVERDUE_sum": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_AMT_CREDIT_SUM_OVERDUE_mean": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_AMT_CREDIT_SUM_OVERDUE_max": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_DAYS_CREDIT_UPDATE_min": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_DAYS_CREDIT_UPDATE_max": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_DAYS_CREDIT_UPDATE_mean": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_AMT_ANNUITY_mean": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_AMT_ANNUITY_sum": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_AMT_ANNUITY_max": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_BB_MONTHS_BALANCE_min_min": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_BB_MONTHS_BALANCE_max_max": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_BB_MONTHS_BALANCE_mean_mean": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_BB_STATUS_0_sum_sum": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_BB_STATUS_1_sum_sum": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_BB_STATUS_2_sum_sum": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_BB_STATUS_3_sum_sum": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_BB_STATUS_4_sum_sum": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_BB_STATUS_5_sum_sum": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_BB_STATUS_C_sum_sum": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_BB_STATUS_X_sum_sum": [
+                    "na_fill_median"
+                ],
+                "CLOSED_DAYS_CREDIT_min": [
+                    "na_fill_median"
+                ],
+                "CLOSED_DAYS_CREDIT_max": [
+                    "na_fill_median"
+                ],
+                "CLOSED_DAYS_CREDIT_mean": [
+                    "na_fill_median"
+                ],
+                "CLOSED_CREDIT_DAY_OVERDUE_max": [
+                    "na_fill_median"
+                ],
+                "CLOSED_CREDIT_DAY_OVERDUE_mean": [
+                    "na_fill_median"
+                ],
+                "CLOSED_CREDIT_DAY_OVERDUE_sum": [
+                    "na_fill_median"
+                ],
+                "CLOSED_DAYS_CREDIT_ENDDATE_min": [
+                    "na_fill_median"
+                ],
+                "CLOSED_DAYS_CREDIT_ENDDATE_max": [
+                    "na_fill_median"
+                ],
+                "CLOSED_DAYS_CREDIT_ENDDATE_mean": [
+                    "na_fill_median"
+                ],
+                "CLOSED_DAYS_ENDDATE_FACT_min": [
+                    "na_fill_median"
+                ],
+                "CLOSED_DAYS_ENDDATE_FACT_max": [
+                    "na_fill_median"
+                ],
+                "CLOSED_DAYS_ENDDATE_FACT_mean": [
+                    "na_fill_median"
+                ],
+                "CLOSED_AMT_CREDIT_MAX_OVERDUE_max": [
+                    "na_fill_median"
+                ],
+                "CLOSED_AMT_CREDIT_MAX_OVERDUE_mean": [
+                    "na_fill_median"
+                ],
+                "CLOSED_AMT_CREDIT_MAX_OVERDUE_sum": [
+                    "na_fill_median"
+                ],
+                "CLOSED_CNT_CREDIT_PROLONG_sum": [
+                    "na_fill_median"
+                ],
+                "CLOSED_CNT_CREDIT_PROLONG_mean": [
+                    "na_fill_median"
+                ],
+                "CLOSED_AMT_CREDIT_SUM_sum": [
+                    "na_fill_median"
+                ],
+                "CLOSED_AMT_CREDIT_SUM_mean": [
+                    "na_fill_median"
+                ],
+                "CLOSED_AMT_CREDIT_SUM_max": [
+                    "na_fill_median"
+                ],
+                "CLOSED_AMT_CREDIT_SUM_DEBT_sum": [
+                    "na_fill_median"
+                ],
+                "CLOSED_AMT_CREDIT_SUM_DEBT_mean": [
+                    "na_fill_median"
+                ],
+                "CLOSED_AMT_CREDIT_SUM_LIMIT_sum": [
+                    "na_fill_median"
+                ],
+                "CLOSED_AMT_CREDIT_SUM_LIMIT_mean": [
+                    "na_fill_median"
+                ],
+                "CLOSED_AMT_CREDIT_SUM_OVERDUE_sum": [
+                    "na_fill_median"
+                ],
+                "CLOSED_AMT_CREDIT_SUM_OVERDUE_mean": [
+                    "na_fill_median"
+                ],
+                "CLOSED_AMT_CREDIT_SUM_OVERDUE_max": [
+                    "na_fill_median"
+                ],
+                "CLOSED_DAYS_CREDIT_UPDATE_min": [
+                    "na_fill_median"
+                ],
+                "CLOSED_DAYS_CREDIT_UPDATE_max": [
+                    "na_fill_median"
+                ],
+                "CLOSED_DAYS_CREDIT_UPDATE_mean": [
+                    "na_fill_median"
+                ],
+                "CLOSED_AMT_ANNUITY_mean": [
+                    "na_fill_median"
+                ],
+                "CLOSED_AMT_ANNUITY_sum": [
+                    "na_fill_median"
+                ],
+                "CLOSED_AMT_ANNUITY_max": [
+                    "na_fill_median"
+                ],
+                "CLOSED_BB_MONTHS_BALANCE_min_min": [
+                    "na_fill_median"
+                ],
+                "CLOSED_BB_MONTHS_BALANCE_max_max": [
+                    "na_fill_median"
+                ],
+                "CLOSED_BB_MONTHS_BALANCE_mean_mean": [
+                    "na_fill_median"
+                ],
+                "CLOSED_BB_STATUS_0_sum_sum": [
+                    "na_fill_median"
+                ],
+                "CLOSED_BB_STATUS_1_sum_sum": [
+                    "na_fill_median"
+                ],
+                "CLOSED_BB_STATUS_2_sum_sum": [
+                    "na_fill_median"
+                ],
+                "CLOSED_BB_STATUS_3_sum_sum": [
+                    "na_fill_median"
+                ],
+                "CLOSED_BB_STATUS_4_sum_sum": [
+                    "na_fill_median"
+                ],
+                "CLOSED_BB_STATUS_5_sum_sum": [
+                    "na_fill_median"
+                ],
+                "CLOSED_BB_STATUS_C_sum_sum": [
+                    "na_fill_median"
+                ],
+                "CLOSED_BB_STATUS_X_sum_sum": [
+                    "na_fill_median"
+                ],
+                "SOLD_DAYS_CREDIT_min": [
+                    "na_fill_median"
+                ],
+                "SOLD_DAYS_CREDIT_max": [
+                    "na_fill_median"
+                ],
+                "SOLD_DAYS_CREDIT_mean": [
+                    "na_fill_median"
+                ],
+                "SOLD_CREDIT_DAY_OVERDUE_max": [
+                    "na_fill_median"
+                ],
+                "SOLD_CREDIT_DAY_OVERDUE_mean": [
+                    "na_fill_median"
+                ],
+                "SOLD_CREDIT_DAY_OVERDUE_sum": [
+                    "na_fill_median"
+                ],
+                "SOLD_DAYS_CREDIT_ENDDATE_min": [
+                    "na_fill_median"
+                ],
+                "SOLD_DAYS_CREDIT_ENDDATE_max": [
+                    "na_fill_median"
+                ],
+                "SOLD_DAYS_CREDIT_ENDDATE_mean": [
+                    "na_fill_median"
+                ],
+                "SOLD_DAYS_ENDDATE_FACT_min": [
+                    "na_fill_median"
+                ],
+                "SOLD_DAYS_ENDDATE_FACT_max": [
+                    "na_fill_median"
+                ],
+                "SOLD_DAYS_ENDDATE_FACT_mean": [
+                    "na_fill_median"
+                ],
+                "SOLD_AMT_CREDIT_MAX_OVERDUE_max": [
+                    "na_fill_median"
+                ],
+                "SOLD_AMT_CREDIT_MAX_OVERDUE_mean": [
+                    "na_fill_median"
+                ],
+                "SOLD_AMT_CREDIT_MAX_OVERDUE_sum": [
+                    "na_fill_median"
+                ],
+                "SOLD_CNT_CREDIT_PROLONG_sum": [
+                    "na_fill_median"
+                ],
+                "SOLD_CNT_CREDIT_PROLONG_mean": [
+                    "na_fill_median"
+                ],
+                "SOLD_AMT_CREDIT_SUM_sum": [
+                    "na_fill_median"
+                ],
+                "SOLD_AMT_CREDIT_SUM_mean": [
+                    "na_fill_median"
+                ],
+                "SOLD_AMT_CREDIT_SUM_max": [
+                    "na_fill_median"
+                ],
+                "SOLD_AMT_CREDIT_SUM_DEBT_sum": [
+                    "na_fill_median"
+                ],
+                "SOLD_AMT_CREDIT_SUM_DEBT_mean": [
+                    "na_fill_median"
+                ],
+                "SOLD_AMT_CREDIT_SUM_LIMIT_sum": [
+                    "na_fill_median"
+                ],
+                "SOLD_AMT_CREDIT_SUM_LIMIT_mean": [
+                    "na_fill_median"
+                ],
+                "SOLD_AMT_CREDIT_SUM_OVERDUE_sum": [
+                    "na_fill_median"
+                ],
+                "SOLD_AMT_CREDIT_SUM_OVERDUE_mean": [
+                    "na_fill_median"
+                ],
+                "SOLD_AMT_CREDIT_SUM_OVERDUE_max": [
+                    "na_fill_median"
+                ],
+                "SOLD_DAYS_CREDIT_UPDATE_min": [
+                    "na_fill_median"
+                ],
+                "SOLD_DAYS_CREDIT_UPDATE_max": [
+                    "na_fill_median"
+                ],
+                "SOLD_DAYS_CREDIT_UPDATE_mean": [
+                    "na_fill_median"
+                ],
+                "SOLD_AMT_ANNUITY_mean": [
+                    "na_fill_median"
+                ],
+                "SOLD_AMT_ANNUITY_sum": [
+                    "na_fill_median"
+                ],
+                "SOLD_AMT_ANNUITY_max": [
+                    "na_fill_median"
+                ],
+                "SOLD_BB_MONTHS_BALANCE_min_min": [
+                    "na_fill_median"
+                ],
+                "SOLD_BB_MONTHS_BALANCE_max_max": [
+                    "na_fill_median"
+                ],
+                "SOLD_BB_MONTHS_BALANCE_mean_mean": [
+                    "na_fill_median"
+                ],
+                "SOLD_BB_STATUS_0_sum_sum": [
+                    "na_fill_median"
+                ],
+                "SOLD_BB_STATUS_1_sum_sum": [
+                    "na_fill_median"
+                ],
+                "SOLD_BB_STATUS_2_sum_sum": [
+                    "na_fill_median"
+                ],
+                "SOLD_BB_STATUS_3_sum_sum": [
+                    "na_fill_median"
+                ],
+                "SOLD_BB_STATUS_4_sum_sum": [
+                    "na_fill_median"
+                ],
+                "SOLD_BB_STATUS_5_sum_sum": [
+                    "na_fill_median"
+                ],
+                "SOLD_BB_STATUS_C_sum_sum": [
+                    "na_fill_median"
+                ],
+                "SOLD_BB_STATUS_X_sum_sum": [
+                    "na_fill_median"
+                ],
+                "ALL_CREDIT_TYPE_Another type of loan": [
+                    "na_fill_median"
+                ],
+                "ALL_CREDIT_TYPE_Car loan": [
+                    "na_fill_median"
+                ],
+                "ALL_CREDIT_TYPE_Cash loan (non-earmarked)": [
+                    "na_fill_median"
+                ],
+                "ALL_CREDIT_TYPE_Consumer credit": [
+                    "na_fill_median"
+                ],
+                "ALL_CREDIT_TYPE_Credit card": [
+                    "na_fill_median"
+                ],
+                "ALL_CREDIT_TYPE_Interbank credit": [
+                    "na_fill_median"
+                ],
+                "ALL_CREDIT_TYPE_Loan for business development": [
+                    "na_fill_median"
+                ],
+                "ALL_CREDIT_TYPE_Loan for purchase of shares (margin lending)": [
+                    "na_fill_median"
+                ],
+                "ALL_CREDIT_TYPE_Loan for the purchase of equipment": [
+                    "na_fill_median"
+                ],
+                "ALL_CREDIT_TYPE_Loan for working capital replenishment": [
+                    "na_fill_median"
+                ],
+                "ALL_CREDIT_TYPE_Microloan": [
+                    "na_fill_median"
+                ],
+                "ALL_CREDIT_TYPE_Mobile operator loan": [
+                    "na_fill_median"
+                ],
+                "ALL_CREDIT_TYPE_Mortgage": [
+                    "na_fill_median"
+                ],
+                "ALL_CREDIT_TYPE_Real estate loan": [
+                    "na_fill_median"
+                ],
+                "ALL_CREDIT_TYPE_Unknown type of loan": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_CREDIT_TYPE_Another type of loan": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_CREDIT_TYPE_Car loan": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_CREDIT_TYPE_Cash loan (non-earmarked)": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_CREDIT_TYPE_Consumer credit": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_CREDIT_TYPE_Credit card": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_CREDIT_TYPE_Loan for business development": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_CREDIT_TYPE_Loan for purchase of shares (margin lending)": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_CREDIT_TYPE_Loan for the purchase of equipment": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_CREDIT_TYPE_Loan for working capital replenishment": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_CREDIT_TYPE_Microloan": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_CREDIT_TYPE_Mobile operator loan": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_CREDIT_TYPE_Mortgage": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_CREDIT_TYPE_Real estate loan": [
+                    "na_fill_median"
+                ],
+                "ACTIVE_CREDIT_TYPE_Unknown type of loan": [
+                    "na_fill_median"
+                ],
+                "CLOSED_CREDIT_TYPE_Another type of loan": [
+                    "na_fill_median"
+                ],
+                "CLOSED_CREDIT_TYPE_Car loan": [
+                    "na_fill_median"
+                ],
+                "CLOSED_CREDIT_TYPE_Cash loan (non-earmarked)": [
+                    "na_fill_median"
+                ],
+                "CLOSED_CREDIT_TYPE_Consumer credit": [
+                    "na_fill_median"
+                ],
+                "CLOSED_CREDIT_TYPE_Credit card": [
+                    "na_fill_median"
+                ],
+                "CLOSED_CREDIT_TYPE_Interbank credit": [
+                    "na_fill_median"
+                ],
+                "CLOSED_CREDIT_TYPE_Loan for business development": [
+                    "na_fill_median"
+                ],
+                "CLOSED_CREDIT_TYPE_Loan for purchase of shares (margin lending)": [
+                    "na_fill_median"
+                ],
+                "CLOSED_CREDIT_TYPE_Loan for the purchase of equipment": [
+                    "na_fill_median"
+                ],
+                "CLOSED_CREDIT_TYPE_Loan for working capital replenishment": [
+                    "na_fill_median"
+                ],
+                "CLOSED_CREDIT_TYPE_Microloan": [
+                    "na_fill_median"
+                ],
+                "CLOSED_CREDIT_TYPE_Mortgage": [
+                    "na_fill_median"
+                ],
+                "CLOSED_CREDIT_TYPE_Real estate loan": [
+                    "na_fill_median"
+                ],
+                "CLOSED_CREDIT_TYPE_Unknown type of loan": [
+                    "na_fill_median"
+                ],
+                "SOLD_CREDIT_TYPE_Another type of loan": [
+                    "na_fill_median"
+                ],
+                "SOLD_CREDIT_TYPE_Car loan": [
+                    "na_fill_median"
+                ],
+                "SOLD_CREDIT_TYPE_Cash loan (non-earmarked)": [
+                    "na_fill_median"
+                ],
+                "SOLD_CREDIT_TYPE_Consumer credit": [
+                    "na_fill_median"
+                ],
+                "SOLD_CREDIT_TYPE_Credit card": [
+                    "na_fill_median"
+                ],
+                "SOLD_CREDIT_TYPE_Loan for business development": [
+                    "na_fill_median"
+                ],
+                "SOLD_CREDIT_TYPE_Loan for working capital replenishment": [
+                    "na_fill_median"
+                ],
+                "SOLD_CREDIT_TYPE_Microloan": [
+                    "na_fill_median"
+                ],
+                "SOLD_CREDIT_TYPE_Mortgage": [
+                    "na_fill_median"
+                ],
+                "SOLD_CREDIT_TYPE_Real estate loan": [
+                    "na_fill_median"
+                ],
+                "CREDIT_ACTIVE_COUNT_ACTIVE": [
+                    "na_fill_median"
+                ],
+                "CREDIT_ACTIVE_COUNT_BAD DEBT": [
+                    "na_fill_median"
+                ],
+                "CREDIT_ACTIVE_COUNT_CLOSED": [
+                    "na_fill_median"
+                ],
+                "CREDIT_ACTIVE_COUNT_SOLD": [
+                    "na_fill_median"
+                ],
+                "DEBT_RATIO": [
+                    "na_fill_median"
+                ],
+                "OVERDUE_RATIO": [
+                    "na_fill_median"
+                ],
+                "BUREAU_LOAN_COUNT": [
+                    "na_fill_median"
+                ],
+                "PREV_AMT_ANNUITY_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_AMT_ANNUITY_MAX": [
+                    "na_fill_median"
+                ],
+                "PREV_AMT_ANNUITY_SUM": [
+                    "na_fill_median"
+                ],
+                "PREV_AMT_APPLICATION_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_AMT_APPLICATION_MAX": [
+                    "na_fill_median"
+                ],
+                "PREV_AMT_APPLICATION_SUM": [
+                    "na_fill_median"
+                ],
+                "PREV_AMT_CREDIT_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_AMT_CREDIT_MAX": [
+                    "na_fill_median"
+                ],
+                "PREV_AMT_CREDIT_SUM": [
+                    "na_fill_median"
+                ],
+                "PREV_AMT_DOWN_PAYMENT_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_AMT_DOWN_PAYMENT_MAX": [
+                    "na_fill_median"
+                ],
+                "PREV_AMT_DOWN_PAYMENT_SUM": [
+                    "na_fill_median"
+                ],
+                "PREV_AMT_GOODS_PRICE_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_AMT_GOODS_PRICE_MAX": [
+                    "na_fill_median"
+                ],
+                "PREV_AMT_GOODS_PRICE_SUM": [
+                    "na_fill_median"
+                ],
+                "PREV_HOUR_APPR_PROCESS_START_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_HOUR_APPR_PROCESS_START_MAX": [
+                    "na_fill_median"
+                ],
+                "PREV_HOUR_APPR_PROCESS_START_MIN": [
+                    "na_fill_median"
+                ],
+                "PREV_RATE_DOWN_PAYMENT_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_RATE_DOWN_PAYMENT_MAX": [
+                    "na_fill_median"
+                ],
+                "PREV_RATE_DOWN_PAYMENT_MIN": [
+                    "na_fill_median"
+                ],
+                "PREV_DAYS_DECISION_MIN": [
+                    "na_fill_median"
+                ],
+                "PREV_DAYS_DECISION_MAX": [
+                    "na_fill_median"
+                ],
+                "PREV_DAYS_DECISION_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_MONTHS_BALANCE_MIN_MIN": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_MONTHS_BALANCE_MAX_MAX": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_MONTHS_BALANCE_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_AMT_BALANCE_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_AMT_BALANCE_MAX_MAX": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_AMT_BALANCE_SUM_SUM": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_AMT_CREDIT_LIMIT_ACTUAL_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_AMT_CREDIT_LIMIT_ACTUAL_MAX_MAX": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_AMT_DRAWINGS_ATM_CURRENT_SUM_SUM": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_AMT_DRAWINGS_ATM_CURRENT_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_AMT_DRAWINGS_CURRENT_SUM_SUM": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_AMT_DRAWINGS_CURRENT_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_AMT_DRAWINGS_POS_CURRENT_SUM_SUM": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_AMT_DRAWINGS_POS_CURRENT_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_AMT_PAYMENT_CURRENT_SUM_SUM": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_AMT_PAYMENT_CURRENT_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_AMT_PAYMENT_TOTAL_CURRENT_SUM_SUM": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_AMT_PAYMENT_TOTAL_CURRENT_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_AMT_RECEIVABLE_PRINCIPAL_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_AMT_RECEIVABLE_PRINCIPAL_MAX_MAX": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_AMT_RECIVABLE_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_AMT_RECIVABLE_MAX_MAX": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_AMT_TOTAL_RECEIVABLE_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_AMT_TOTAL_RECEIVABLE_MAX_MAX": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_CNT_DRAWINGS_CURRENT_SUM_SUM": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_CNT_DRAWINGS_CURRENT_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_CNT_DRAWINGS_ATM_CURRENT_SUM_SUM": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_CNT_DRAWINGS_ATM_CURRENT_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_CNT_DRAWINGS_POS_CURRENT_SUM_SUM": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_CNT_DRAWINGS_POS_CURRENT_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_SK_DPD_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_SK_DPD_MAX_MAX": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_SK_DPD_SUM_SUM": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_SK_DPD_DEF_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_SK_DPD_DEF_MAX_MAX": [
+                    "na_fill_median"
+                ],
+                "PREV_CCB_SK_DPD_DEF_SUM_SUM": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_NUM_INSTALMENT_VERSION_NUNIQUE_NUNIQUE": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_NUM_INSTALMENT_NUMBER_MAX_MAX": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_NUM_INSTALMENT_NUMBER_COUNT_COUNT": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_AMT_INSTALMENT_SUM_SUM": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_AMT_INSTALMENT_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_AMT_INSTALMENT_MAX_MAX": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_AMT_PAYMENT_SUM_SUM": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_AMT_PAYMENT_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_AMT_PAYMENT_MAX_MAX": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_DAYS_INSTALMENT_MIN_MIN": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_DAYS_INSTALMENT_MAX_MAX": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_DAYS_INSTALMENT_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_DAYS_ENTRY_PAYMENT_MIN_MIN": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_DAYS_ENTRY_PAYMENT_MAX_MAX": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_DAYS_ENTRY_PAYMENT_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_PAYMENT_PERC_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_PAYMENT_PERC_STD_STD": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_PAYMENT_DIFF_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_PAYMENT_DIFF_STD_STD": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_PAYMENT_DIFF_MIN_MIN": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_PAYMENT_DIFF_MAX_MAX": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_DPD_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_DPD_SUM_SUM": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_DPD_MAX_MAX": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_EARLY_PAYMENT_MEAN_MEAN": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_EARLY_PAYMENT_SUM_SUM": [
+                    "na_fill_median"
+                ],
+                "PREV_INST_EARLY_REPAY_LOAN_MAX_MEAN": [
+                    "na_fill_median"
+                ],
+                "NAME_CONTRACT_STATUS_Approved": [
+                    "na_fill_median"
+                ],
+                "NAME_CONTRACT_STATUS_Canceled": [
+                    "na_fill_median"
+                ],
+                "NAME_CONTRACT_STATUS_Refused": [
+                    "na_fill_median"
+                ],
+                "NAME_CONTRACT_STATUS_Unused offer": [
+                    "na_fill_median"
+                ],
+                "NAME_PAYMENT_TYPE_Cash through the bank": [
+                    "na_fill_median"
+                ],
+                "NAME_PAYMENT_TYPE_Cashless from the account of the employer": [
+                    "na_fill_median"
+                ],
+                "NAME_PAYMENT_TYPE_Non-cash from your account": [
+                    "na_fill_median"
+                ],
+                "NAME_PAYMENT_TYPE_XNA": [
+                    "na_fill_median"
+                ],
+                "NAME_CLIENT_TYPE_New": [
+                    "na_fill_median"
+                ],
+                "NAME_CLIENT_TYPE_Refreshed": [
+                    "na_fill_median"
+                ],
+                "NAME_CLIENT_TYPE_Repeater": [
+                    "na_fill_median"
+                ],
+                "NAME_CLIENT_TYPE_XNA": [
+                    "na_fill_median"
+                ],
+                "NAME_CONTRACT_TYPE_Cash loans": [
+                    "na_fill_median"
+                ],
+                "NAME_CONTRACT_TYPE_Consumer loans": [
+                    "na_fill_median"
+                ],
+                "NAME_CONTRACT_TYPE_Revolving loans": [
+                    "na_fill_median"
+                ],
+                "NAME_CONTRACT_TYPE_XNA": [
+                    "na_fill_median"
+                ],
+                "WEEKDAY_APPR_PROCESS_START_FRIDAY": [
+                    "na_fill_median"
+                ],
+                "WEEKDAY_APPR_PROCESS_START_MONDAY": [
+                    "na_fill_median"
+                ],
+                "WEEKDAY_APPR_PROCESS_START_SATURDAY": [
+                    "na_fill_median"
+                ],
+                "WEEKDAY_APPR_PROCESS_START_SUNDAY": [
+                    "na_fill_median"
+                ],
+                "WEEKDAY_APPR_PROCESS_START_THURSDAY": [
+                    "na_fill_median"
+                ],
+                "WEEKDAY_APPR_PROCESS_START_TUESDAY": [
+                    "na_fill_median"
+                ],
+                "WEEKDAY_APPR_PROCESS_START_WEDNESDAY": [
+                    "na_fill_median"
+                ],
+                "POS_MONTHS_BALANCE_MIN": [
+                    "na_fill_median"
+                ],
+                "POS_MONTHS_BALANCE_MAX": [
+                    "na_fill_median"
+                ],
+                "POS_MONTHS_BALANCE_MEAN": [
+                    "na_fill_median"
+                ],
+                "POS_SK_DPD_MEAN": [
+                    "na_fill_median"
+                ],
+                "POS_SK_DPD_MAX": [
+                    "na_fill_median"
+                ],
+                "POS_SK_DPD_SUM": [
+                    "na_fill_median"
+                ],
+                "POS_SK_DPD_DEF_MEAN": [
+                    "na_fill_median"
+                ],
+                "POS_SK_DPD_DEF_MAX": [
+                    "na_fill_median"
+                ],
+                "POS_SK_DPD_DEF_SUM": [
+                    "na_fill_median"
+                ],
+                "POS_CNT_INSTALMENT_MEAN": [
+                    "na_fill_median"
+                ],
+                "POS_CNT_INSTALMENT_MAX": [
+                    "na_fill_median"
+                ],
+                "POS_CNT_INSTALMENT_FUTURE_MEAN": [
+                    "na_fill_median"
+                ],
+                "POS_CNT_INSTALMENT_FUTURE_MAX": [
+                    "na_fill_median"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "binary_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.9,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_8\\X.data",
+            "y_path": "AutoML_8\\y.data",
+            "results_path": "AutoML_8",
+            "sample_weight_path": "AutoML_8\\sample_weight.data"
+        },
+        "learner": {
+            "model_type": "Xgboost",
+            "ml_task": "binary_classification",
+            "n_jobs": -1,
+            "seed": 43,
+            "objective": "binary:logistic",
+            "eta": 0.1,
+            "max_depth": 7,
+            "min_child_weight": 5,
+            "subsample": 1.0,
+            "colsample_bytree": 0.5,
+            "eval_metric": "auc",
+            "explain_level": 2
+        },
+        "automl_random_state": 42,
+        "ml_task": "binary_classification",
+        "explain_level": 2,
+        "name": "6_Xgboost",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "6_Xgboost\\learner_fold_0.xgboost.json"
+    ],
+    "predictions_fname": "6_Xgboost\\predictions_validation.csv",
+    "metric_name": "auc",
+    "final_loss": "-0.779222074926151",
+    "train_time": 211.70044994354248,
+    "is_stacked": false,
+    "joblib_version": "1.5.1",
+    "threshold": 0.4320976436138153
+}
